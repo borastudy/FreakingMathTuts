@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class GamePlayControl : MonoBehaviour
 {
     [SerializeField] BrainScript brain;
-    [SerializeField] UnityEngine.UI.Text textQuestion;
-    [SerializeField] UnityEngine.UI.Text[] textAnswers;
+    [SerializeField] Text textQuestion;
+    [SerializeField] Text[] textAnswers;
     
 
     void Start()

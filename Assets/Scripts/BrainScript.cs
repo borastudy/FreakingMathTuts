@@ -14,10 +14,10 @@ public enum MathOperator
 
 public class BrainScript : MonoBehaviour
 {
-    private float operandA;
-    private float operandB;
-    public float correctResult;
-    public float[] results;
+    private int operandA;
+    private int operandB;
+    public int correctResult;
+    public int[] results;
     public string question;
     public MathOperator mathOperator;
 
@@ -26,9 +26,9 @@ public class BrainScript : MonoBehaviour
         operandA = Random.Range (10, 50);
         operandB = Random.Range (10, 50);
 
-        mathOperator = (MathOperator)Random.Range (0, 4);
+        mathOperator = (MathOperator)Random.Range (0, 3);
         
-        results = new float[4];
+        results = new int[4];
         
         string sign = "";
         switch(mathOperator)
@@ -58,6 +58,7 @@ public class BrainScript : MonoBehaviour
         question = operandA + sign + operandB + " = ?";
 
         results[0] = correctResult;
+
         GenFakeResults();
     }
 
@@ -65,7 +66,7 @@ public class BrainScript : MonoBehaviour
     {
         for(int i = 1; i<4; i++)
         {
-            float fakeResult = Random.Range (correctResult - 10, correctResult + 10);
+            int fakeResult = Random.Range (correctResult - 10, correctResult + 10);
             while(fakeResult == correctResult || results.Contains(fakeResult))
             {
                 fakeResult = Random.Range (correctResult - 10, correctResult + 10);
