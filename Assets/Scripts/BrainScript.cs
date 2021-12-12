@@ -19,11 +19,7 @@ public class BrainScript : MonoBehaviour
     private string question;
     private MathOperator mathOperator;
 
-    void Start ()
-    {
-        Debug.Log ("In function start!");
-        GenerateQuiz();
-    }
+
 
     public void GenerateQuiz ()
     {
@@ -81,5 +77,10 @@ public class BrainScript : MonoBehaviour
         results[1] = fake1;
         results[2] = fake2;
         results[3] = fake3;
+    }
+
+    public string GetQuestion ()
+    {
+        return question;
     }
 }

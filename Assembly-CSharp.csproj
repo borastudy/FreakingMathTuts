@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/BrainScript.cs" />
+    <Compile Include="Assets/Scripts/GameControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
