@@ -83,4 +83,8 @@ public class BrainScript : MonoBehaviour
     {
         return question;
     }
+    public int[] GetResults()
+    {
+        return results;
+    }
 }
