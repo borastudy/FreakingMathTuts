@@ -8,6 +8,7 @@ public class GameControl : MonoBehaviour
     [SerializeField] Text textScore;
     [SerializeField] Text textQuestion;
     [SerializeField] BrainScript brainScript;
+    [SerializeField] LifeControl lifeControl;
 
     [SerializeField] Text textAnswer1;
     [SerializeField] Text textAnswer2;
@@ -48,16 +49,26 @@ public class GameControl : MonoBehaviour
             //increase score
             score = score + 1;
             textScore.text = score.ToString();
-
+            GenerateQuestion();
             Debug.Log("Score : " + score);
 
         }
         else
         {
-
+            //use life control
+            lifeControl.RemoveLife();
+            if (lifeControl.StillHasLife())
+            {
+                GenerateQuestion();
+            }
+            else
+            {
+                //display game over
+                Debug.Log("===GAME OVER===");
+            }
         }
 
-        GenerateQuestion();
+        
     }
   
 }
