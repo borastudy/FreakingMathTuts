@@ -811,6 +811,7 @@ MonoBehaviour:
   textAnswer2: {fileID: 658620920}
   textAnswer3: {fileID: 422700969}
   textAnswer4: {fileID: 2075733157}
+  gameOverPanel: {fileID: 723004635}
 --- !u!4 &372105350
 Transform:
   m_ObjectHideFlags: 0
@@ -1314,7 +1315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &723004636
 RectTransform:
   m_ObjectHideFlags: 0
