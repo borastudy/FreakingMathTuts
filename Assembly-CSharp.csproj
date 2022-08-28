@@ -62,6 +62,7 @@
     <Compile Include="Assets/Scripts/GameControl.cs" />
     <Compile Include="Assets/Scripts/LifeControl.cs" />
     <Compile Include="Assets/Scripts/BrainScript.cs" />
+    <Compile Include="Assets/Scripts/GameOverControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

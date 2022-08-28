@@ -15,7 +15,7 @@ public class GameControl : MonoBehaviour
     [SerializeField] Text textAnswer3;
     [SerializeField] Text textAnswer4;
 
-    [SerializeField] GameObject gameOverPanel;
+    [SerializeField] GameOverControl gameOverControl;
 
     private int correctResult = -1;
     private int score = 0;
@@ -67,7 +67,10 @@ public class GameControl : MonoBehaviour
             {
                 //display game over
                 Debug.Log("===GAME OVER===");
-                gameOverPanel.SetActive(true);
+                //gameOverPanel.SetActive(true);
+                //gameOverPanel.GetComponent<GameOverControl>().SetScore(score);
+                gameOverControl.gameObject.SetActive(true);
+                gameOverControl.SetScore(score);
             }
         }
 

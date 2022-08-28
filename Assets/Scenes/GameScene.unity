@@ -811,7 +811,7 @@ MonoBehaviour:
   textAnswer2: {fileID: 658620920}
   textAnswer3: {fileID: 422700969}
   textAnswer4: {fileID: 2075733157}
-  gameOverPanel: {fileID: 723004635}
+  gameOverControl: {fileID: 723004640}
 --- !u!4 &372105350
 Transform:
   m_ObjectHideFlags: 0
@@ -1309,6 +1309,7 @@ GameObject:
   - component: {fileID: 723004638}
   - component: {fileID: 723004637}
   - component: {fileID: 723004639}
+  - component: {fileID: 723004640}
   m_Layer: 5
   m_Name: GameOverPanel
   m_TagString: Untagged
@@ -1396,6 +1397,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &723004640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723004635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c64ec25bff51a427fa1b92c7c5888b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textScore: {fileID: 1766333206}
 --- !u!1 &737419084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,7 +2745,7 @@ GameObject:
   - component: {fileID: 1766333207}
   - component: {fileID: 1766333206}
   m_Layer: 5
-  m_Name: TextScoreDes (1)
+  m_Name: TextScoreValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
