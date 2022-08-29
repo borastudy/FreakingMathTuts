@@ -36,4 +36,13 @@ public class LifeControl : MonoBehaviour
     {
         return totalLife == 0;
     }
+
+    public void ResetLife()
+    {
+        totalLife = 5;
+        foreach (var toggle in toggles)
+        {
+            toggle.isOn = true;
+        }
+    }
 }
