@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameOverControl : MonoBehaviour
 {
@@ -18,5 +19,10 @@ public class GameOverControl : MonoBehaviour
         Debug.Log("Clicked Button continue");
         gameObject.SetActive(false);
         lifeControl.ResetLife();
+    }
+
+    public void ClickNoThankYou ()
+    {
+        SceneManager.LoadScene(0);
     }
 }
