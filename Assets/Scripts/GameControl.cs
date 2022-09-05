@@ -16,7 +16,8 @@ public class GameControl : MonoBehaviour
     [SerializeField] Text textAnswer4;
 
     [SerializeField] GameOverControl gameOverControl;
-    [SerializeField] GameDataManager gameDataManager;
+
+    private GameDataManager gameDataManager;
 
 
     private int correctResult = -1;
@@ -25,6 +26,7 @@ public class GameControl : MonoBehaviour
     void Start()
     {
         GenerateQuestion();
+        gameDataManager = GameDataManager.dataManager;
     }
 
     private void GenerateQuestion ()

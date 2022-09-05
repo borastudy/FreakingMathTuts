@@ -555,8 +555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529359b245cc84e708230eab26b85169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textHighScore: {fileID: 2126831789165890412}
-  dataManager: {fileID: 951848193}
+  textScore: {fileID: 2126831789165890412}
+  gameDataManager: {fileID: 951848193}
 --- !u!4 &1594648456
 Transform:
   m_ObjectHideFlags: 0
