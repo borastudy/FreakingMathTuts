@@ -16,6 +16,8 @@ public class GameControl : MonoBehaviour
     [SerializeField] Text textAnswer4;
 
     [SerializeField] GameOverControl gameOverControl;
+    [SerializeField] GameDataManager gameDataManager;
+
 
     private int correctResult = -1;
     private int score = 0;
@@ -71,6 +73,8 @@ public class GameControl : MonoBehaviour
                 //gameOverPanel.GetComponent<GameOverControl>().SetScore(score);
                 gameOverControl.gameObject.SetActive(true);
                 gameOverControl.SetScore(score);
+
+                gameDataManager.HighScore = score;
             }
         }
 
