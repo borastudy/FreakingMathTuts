@@ -60,6 +60,7 @@
     <Compile Include="Assets/Scripts/LifeControl.cs" />
     <Compile Include="Assets/Scripts/GameDataManager.cs" />
     <Compile Include="Assets/Scripts/BrainScript.cs" />
+    <Compile Include="Assets/Scripts/SplashControl.cs" />
     <Compile Include="Assets/Scripts/HomeControl.cs" />
     <Compile Include="Assets/Scripts/GameOverControl.cs" />
   </ItemGroup>

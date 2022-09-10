@@ -6,15 +6,16 @@ using UnityEngine.UI;
 public class HomeControl : MonoBehaviour
 {
     [SerializeField] Text textScore;
-    [SerializeField] GameDataManager gameDataManager;
+    private GameDataManager gameDataManager;
 
     private void Start()
     {
+        gameDataManager = GameDataManager.dataManager;
         textScore.text = gameDataManager.HighScore.ToString();
     }
 
     public void ClickToGameScene ()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
     }
 }

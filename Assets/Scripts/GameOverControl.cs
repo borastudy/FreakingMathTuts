@@ -23,6 +23,6 @@ public class GameOverControl : MonoBehaviour
 
     public void ClickNoThankYou ()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("HomeScene");
     }
 }
