@@ -76,7 +76,11 @@ public class GameControl : MonoBehaviour
                 gameOverControl.gameObject.SetActive(true);
                 gameOverControl.SetScore(score);
 
-                gameDataManager.HighScore = score;
+                if (score > gameDataManager.HighScore)
+                {
+                    //keep new highscore
+                    gameDataManager.HighScore = score;
+                }
             }
         }
 

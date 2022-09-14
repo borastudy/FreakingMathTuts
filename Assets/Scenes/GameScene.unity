@@ -821,7 +821,6 @@ MonoBehaviour:
   textAnswer3: {fileID: 422700969}
   textAnswer4: {fileID: 2075733157}
   gameOverControl: {fileID: 723004640}
-  gameDataManager: {fileID: 0}
 --- !u!4 &372105350
 Transform:
   m_ObjectHideFlags: 0
