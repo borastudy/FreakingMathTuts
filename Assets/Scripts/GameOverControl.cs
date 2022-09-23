@@ -8,6 +8,7 @@ public class GameOverControl : MonoBehaviour
 {
     [SerializeField] Text textScore;
     [SerializeField] LifeControl lifeControl;
+    [SerializeField] TimerBarControl timerBarControl;
 
     public void SetScore(int score)
     {
@@ -19,6 +20,7 @@ public class GameOverControl : MonoBehaviour
         Debug.Log("Clicked Button continue");
         gameObject.SetActive(false);
         lifeControl.ResetLife();
+        timerBarControl.Reset();
     }
 
     public void ClickNoThankYou ()

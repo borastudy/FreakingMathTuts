@@ -16,6 +16,7 @@ public class GameControl : MonoBehaviour
     [SerializeField] Text textAnswer4;
 
     [SerializeField] GameOverControl gameOverControl;
+    [SerializeField] TimerBarControl timerBarControl;
 
     private GameDataManager gameDataManager;
 
@@ -69,22 +70,33 @@ public class GameControl : MonoBehaviour
             }
             else
             {
-                //display game over
-                Debug.Log("===GAME OVER===");
-                //gameOverPanel.SetActive(true);
-                //gameOverPanel.GetComponent<GameOverControl>().SetScore(score);
-                gameOverControl.gameObject.SetActive(true);
-                gameOverControl.SetScore(score);
-
-                if (score > gameDataManager.HighScore)
-                {
-                    //keep new highscore
-                    gameDataManager.HighScore = score;
-                }
+                ShowGameOver();
+                timerBarControl.Pause();
             }
         }
 
-        
+        if (lifeControl.StillHasLife())
+        {
+            //call to reset timerbar
+            timerBarControl.Reset();
+        }
+            
+    }
+
+    public void ShowGameOver ()
+    {
+        //display game over
+        Debug.Log("===GAME OVER===");
+        //gameOverPanel.SetActive(true);
+        //gameOverPanel.GetComponent<GameOverControl>().SetScore(score);
+        gameOverControl.gameObject.SetActive(true);
+        gameOverControl.SetScore(score);
+
+        if (score > gameDataManager.HighScore)
+        {
+            //keep new highscore
+            gameDataManager.HighScore = score;
+        }
     }
   
-}
+}//class
