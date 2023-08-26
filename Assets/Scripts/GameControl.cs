@@ -24,6 +24,8 @@ public class GameControl : MonoBehaviour
     private int correctResult = -1;
     private int score = 0;
 
+    private int countCorrect = 0;
+
     void Start()
     {
         GenerateQuestion();
@@ -59,9 +61,18 @@ public class GameControl : MonoBehaviour
             GenerateQuestion();
             Debug.Log("Score : " + score);
 
+            countCorrect++;
+            if(countCorrect == 10)
+            {
+                lifeControl.AddLife();
+                countCorrect = 0;
+            }
+
         }
         else
         {
+            countCorrect = 0;
+
             //use life control
             lifeControl.RemoveLife();
             if (lifeControl.StillHasLife())
