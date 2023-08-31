@@ -10,6 +10,8 @@ public class LifeControl : MonoBehaviour
 
     [SerializeField] Text textExtraLife;
 
+    [SerializeField] Animator animator;
+
     private void Start()
     {
         textExtraLife.text = string.Empty;
@@ -44,6 +46,12 @@ public class LifeControl : MonoBehaviour
         {
             toggles[totalLife - 1].isOn = true;
         }
+
+        //MoveToToggle1
+        //MoveToTextExtraLife
+
+        animator.Play("MoveToToggleLife2");
+
         RefreshExtraLife();
     }
 

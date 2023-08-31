@@ -17,6 +17,7 @@ public class GameControl : MonoBehaviour
 
     [SerializeField] GameOverControl gameOverControl;
     [SerializeField] TimerBarControl timerBarControl;
+    [SerializeField] Image imageBonusLife;
 
     private GameDataManager gameDataManager;
 
@@ -30,6 +31,8 @@ public class GameControl : MonoBehaviour
     {
         GenerateQuestion();
         gameDataManager = GameDataManager.dataManager;
+
+        imageBonusLife.fillAmount = 0;
     }
 
     private void GenerateQuestion ()
@@ -91,7 +94,8 @@ public class GameControl : MonoBehaviour
             //call to reset timerbar
             timerBarControl.Reset();
         }
-            
+
+        imageBonusLife.fillAmount = countCorrect / 10.0f;
     }
 
     public void ShowGameOver ()
