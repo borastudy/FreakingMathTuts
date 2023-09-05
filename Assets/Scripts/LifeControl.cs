@@ -47,9 +47,6 @@ public class LifeControl : MonoBehaviour
             toggles[totalLife - 1].isOn = true;
         }
 
-        //MoveToToggle1
-        //MoveToTextExtraLife
-
         animator.Play("MoveToToggleLife2");
 
         RefreshExtraLife();

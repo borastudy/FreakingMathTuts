@@ -2163,7 +2163,7 @@ MonoBehaviour:
   - {fileID: 1777032134}
   totalLife: 5
   textExtraLife: {fileID: 1428215529}
-  animator: {fileID: 0}
+  animator: {fileID: 1414673679}
 --- !u!1 &1137808469
 GameObject:
   m_ObjectHideFlags: 0
