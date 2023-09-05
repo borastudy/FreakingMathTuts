@@ -41,16 +41,58 @@ public class LifeControl : MonoBehaviour
 
     public void AddLife()
     {
+        StartCoroutine(_addLife());
+    }
+
+    IEnumerator _addLife()
+    {
         totalLife++;
+
+        if (totalLife > 5)
+        {
+            animator.Play("MoveToTextExtraLife");
+        }
+        else
+        {
+            //totalLife=2 => MoveToToggleLife2
+            //totalLife=3 => MoveToToggleLife3
+            //totalLife=4 => MoveToToggleLife4
+            //totalLife=5 => MoveToToggleLife5
+
+            /*if(totalLife == 2)
+            {
+                animator.Play("MoveToToggleLife2");
+            } else if(totalLife == 3)
+            {
+                animator.Play("MoveToToggleLife3");
+            }
+            else if (totalLife == 4)
+            {
+                animator.Play("MoveToToggleLife4");
+            }
+            else if (totalLife == 5)
+            {
+                animator.Play("MoveToToggleLife5");
+            }*/
+
+
+            var clipName = $"MoveToToggleLife{totalLife}";
+            animator.Play(clipName);
+
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
         if (toggles.Length > totalLife - 1)
         {
             toggles[totalLife - 1].isOn = true;
         }
 
-        animator.Play("MoveToToggleLife2");
+
 
         RefreshExtraLife();
     }
+
 
     private void RefreshExtraLife()
     {
