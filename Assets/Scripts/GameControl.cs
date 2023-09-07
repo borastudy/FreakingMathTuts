@@ -98,6 +98,12 @@ public class GameControl : MonoBehaviour
         imageBonusLife.fillAmount = countCorrect / 10.0f;
     }
 
+    public void ResetBonusLife()
+    {
+        countCorrect = 0;
+        imageBonusLife.fillAmount = countCorrect / 10.0f;
+    }
+
     public void ShowGameOver ()
     {
         //display game over

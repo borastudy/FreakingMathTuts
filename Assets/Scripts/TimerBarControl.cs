@@ -67,6 +67,7 @@ public class TimerBarControl : MonoBehaviour
 
     void RemoveLifeAndResetTimer ()
     {
+        gameControl.ResetBonusLife();
 
         lifeControl.RemoveLife();
         //2 - 1 = 1
