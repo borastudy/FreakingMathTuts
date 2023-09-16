@@ -26,7 +26,7 @@ public class BrainScript : MonoBehaviour
         operandA = Random.Range (10, 50);
         operandB = Random.Range (10, 50);
 
-        mathOperator = (MathOperator)Random.Range(0, 3);
+        mathOperator = (MathOperator)Random.Range(0, 4);
 
         string sign = "";
         switch(mathOperator)
@@ -47,6 +47,7 @@ public class BrainScript : MonoBehaviour
             break;
 
             case MathOperator.DEVIDE:
+            operandA = operandB * Random.Range(1, 10);
             correctResult = operandA / operandB;
             sign = "/";
             break;
