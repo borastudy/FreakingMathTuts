@@ -63,6 +63,8 @@ public class BrainScript : MonoBehaviour
 
         GenerateFakeResults ();
 
+        Shuffle(results);
+
         Debug.Log("Answer 1: " + results[0]);
         Debug.Log("Answer 2: " + results[1]);
         Debug.Log("Answer 3: " + results[2]);
@@ -87,5 +89,23 @@ public class BrainScript : MonoBehaviour
     public int[] GetResults()
     {
         return results;
+    }
+    public int GetCorrectResult()
+    {
+        return correctResult;
+    }
+
+    public void Shuffle(int[] arr)
+    {
+        var n = arr.Length - 1;
+        while(n >= 0)
+        {
+            var k = Random.Range(0, n);
+            var temp = arr[k];
+            arr[k] = arr[n];
+            arr[n] = temp;
+
+            n--;
+        }
     }
 }

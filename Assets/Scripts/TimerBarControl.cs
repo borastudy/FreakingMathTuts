@@ -38,9 +38,9 @@ public class TimerBarControl : MonoBehaviour
 
             //timeCounter = timeCounter + Time.deltaTime;
 
-            Debug.Log("Delta time : " + Time.deltaTime);
-            Debug.Log("Current count : " + timeCounter);
-            Debug.Log("Normalized : " + normalized);
+            //Debug.Log("Delta time : " + Time.deltaTime);
+            //Debug.Log("Current count : " + timeCounter);
+            //Debug.Log("Normalized : " + normalized);
 
             imageTimerBar.fillAmount = normalized;
 

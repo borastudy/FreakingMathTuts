@@ -41,7 +41,7 @@ public class GameControl : MonoBehaviour
         textQuestion.text = brainScript.GetQuestion();
 
         var results = brainScript.GetResults();
-        correctResult = results[0];
+        correctResult = brainScript.GetCorrectResult();
 
         textAnswer1.text = results[0].ToString();
         textAnswer2.text = results[1].ToString();
