@@ -94,6 +94,10 @@ public class BrainScript : MonoBehaviour
     {
         return correctResult;
     }
+    public int GetCorrectResultIndex()
+    {
+        return System.Array.IndexOf(results, correctResult);
+    }
 
     public void Shuffle(int[] arr)
     {

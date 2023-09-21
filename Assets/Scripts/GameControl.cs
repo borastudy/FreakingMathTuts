@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour
 {
+    [SerializeField] GameObject[] hands;
+
     [SerializeField] Text textScore;
     [SerializeField] Text textQuestion;
     [SerializeField] BrainScript brainScript;
@@ -47,6 +49,13 @@ public class GameControl : MonoBehaviour
         textAnswer2.text = results[1].ToString();
         textAnswer3.text = results[2].ToString();
         textAnswer4.text = results[3].ToString();
+    }
+
+    public void GiveAnswer()
+    {
+        var correctIndex = brainScript.GetCorrectResultIndex();
+        hands[correctIndex].SetActive(true);
+        HandleClick(correctIndex);
     }
 
     public void HandleClick (int index)
