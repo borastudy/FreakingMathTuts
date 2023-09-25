@@ -62,10 +62,10 @@
     <Compile Include="Assets/Scripts/TimerBarControl.cs" />
     <Compile Include="Assets/Scripts/BrainScript.cs" />
     <Compile Include="Assets/Scripts/SplashControl.cs" />
-    <Compile Include="Assets/Scripts/HomeControl.cs" />
-    <Compile Include="Assets/Scripts/GameOverControl.cs" />
     <Compile Include="Assets/Scripts/HintControl.cs" />
+    <Compile Include="Assets/Scripts/HomeControl.cs" />
     <Compile Include="Assets/Scripts/Hand.cs" />
+    <Compile Include="Assets/Scripts/GameOverControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
