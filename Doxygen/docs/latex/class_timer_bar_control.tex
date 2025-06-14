@@ -1,0 +1,238 @@
+\doxysection{Timer\+Bar\+Control Class Reference}
+\hypertarget{class_timer_bar_control}{}\label{class_timer_bar_control}\index{TimerBarControl@{TimerBarControl}}
+
+
+Inheritance diagram for Timer\+Bar\+Control\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_timer_bar_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Timer\+Bar\+Control\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_timer_bar_control__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_timer_bar_control_a4ba03f29a5fb59d8d2b0121505b09363}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_timer_bar_control_ab0ad5a452fa11ed24e49cce88dfb1e9c}{Pause}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_timer_bar_control_ae42287866ddc31705f7df2c772c7a145}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_timer_bar_control_a29535885e26efc5b3d905a6caf71bee5}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_timer_bar_control_ac43a4ca4b7f9a48c0d63bb760fdca056}{Remove\+Life\+And\+Reset\+Timer}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_timer_bar_control_a0a4d12ffe81394d45fb87eea8fbbba18}{duration\+Per\+Question}} = 10.\+0f
+\item 
+Image \mbox{\hyperlink{class_timer_bar_control_a19609b0c3ffe256b9076ebcf97df035e}{image\+Timer\+Bar}}
+\item 
+\mbox{\hyperlink{class_life_control}{Life\+Control}} \mbox{\hyperlink{class_timer_bar_control_af079dfd6f693e37291371c1fe036a6de}{life\+Control}}
+\item 
+\mbox{\hyperlink{class_game_control}{Game\+Control}} \mbox{\hyperlink{class_timer_bar_control_aab59a521b8afc3f95dcfbd066a2543dc}{game\+Control}}
+\item 
+bool \mbox{\hyperlink{class_timer_bar_control_a2d15d792e1f1a3e599b9709cc8506267}{is\+Time\+Out}} = false
+\item 
+float \mbox{\hyperlink{class_timer_bar_control_adf33778e019cd6acd64d70b9ec47fba3}{time\+Counter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00006}{6}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_timer_bar_control_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_timer_bar_control_ab0ad5a452fa11ed24e49cce88dfb1e9c}\index{TimerBarControl@{TimerBarControl}!Pause@{Pause}}
+\index{Pause@{Pause}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_ab0ad5a452fa11ed24e49cce88dfb1e9c} 
+void Timer\+Bar\+Control.\+Pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00063}{63}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_timer_bar_control_8cs_source_l00013}{is\+Time\+Out}}.
+
+\Hypertarget{class_timer_bar_control_ac43a4ca4b7f9a48c0d63bb760fdca056}\index{TimerBarControl@{TimerBarControl}!RemoveLifeAndResetTimer@{RemoveLifeAndResetTimer}}
+\index{RemoveLifeAndResetTimer@{RemoveLifeAndResetTimer}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{RemoveLifeAndResetTimer()}{RemoveLifeAndResetTimer()}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_ac43a4ca4b7f9a48c0d63bb760fdca056} 
+void Timer\+Bar\+Control.\+Remove\+Life\+And\+Reset\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00068}{68}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_timer_bar_control_8cs_source_l00011}{game\+Control}}, \mbox{\hyperlink{_timer_bar_control_8cs_source_l00010}{life\+Control}}, and \mbox{\hyperlink{_timer_bar_control_8cs_source_l00056}{Reset()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_timer_bar_control_ac43a4ca4b7f9a48c0d63bb760fdca056_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_timer_bar_control_ac43a4ca4b7f9a48c0d63bb760fdca056_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_timer_bar_control_a4ba03f29a5fb59d8d2b0121505b09363}\index{TimerBarControl@{TimerBarControl}!Reset@{Reset}}
+\index{Reset@{Reset}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_a4ba03f29a5fb59d8d2b0121505b09363} 
+void Timer\+Bar\+Control.\+Reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00056}{56}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_timer_bar_control_8cs_source_l00008}{duration\+Per\+Question}}, \mbox{\hyperlink{_timer_bar_control_8cs_source_l00013}{is\+Time\+Out}}, and \mbox{\hyperlink{_timer_bar_control_8cs_source_l00015}{time\+Counter}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_timer_bar_control_a4ba03f29a5fb59d8d2b0121505b09363_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_timer_bar_control_ae42287866ddc31705f7df2c772c7a145}\index{TimerBarControl@{TimerBarControl}!Start@{Start}}
+\index{Start@{Start}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_ae42287866ddc31705f7df2c772c7a145} 
+void Timer\+Bar\+Control.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_timer_bar_control_8cs_source_l00056}{Reset()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_timer_bar_control_ae42287866ddc31705f7df2c772c7a145_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_timer_bar_control_a29535885e26efc5b3d905a6caf71bee5}\index{TimerBarControl@{TimerBarControl}!Update@{Update}}
+\index{Update@{Update}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_a29535885e26efc5b3d905a6caf71bee5} 
+void Timer\+Bar\+Control.\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00023}{23}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_timer_bar_control_8cs_source_l00008}{duration\+Per\+Question}}, \mbox{\hyperlink{_timer_bar_control_8cs_source_l00013}{is\+Time\+Out}}, \mbox{\hyperlink{_timer_bar_control_8cs_source_l00068}{Remove\+Life\+And\+Reset\+Timer()}}, and \mbox{\hyperlink{_timer_bar_control_8cs_source_l00015}{time\+Counter}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_timer_bar_control_a29535885e26efc5b3d905a6caf71bee5_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_timer_bar_control_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_timer_bar_control_a0a4d12ffe81394d45fb87eea8fbbba18}\index{TimerBarControl@{TimerBarControl}!durationPerQuestion@{durationPerQuestion}}
+\index{durationPerQuestion@{durationPerQuestion}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{durationPerQuestion}{durationPerQuestion}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_a0a4d12ffe81394d45fb87eea8fbbba18} 
+float Timer\+Bar\+Control.\+duration\+Per\+Question = 10.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00008}{8}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+\Hypertarget{class_timer_bar_control_aab59a521b8afc3f95dcfbd066a2543dc}\index{TimerBarControl@{TimerBarControl}!gameControl@{gameControl}}
+\index{gameControl@{gameControl}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{gameControl}{gameControl}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_aab59a521b8afc3f95dcfbd066a2543dc} 
+\mbox{\hyperlink{class_game_control}{Game\+Control}} Timer\+Bar\+Control.\+game\+Control\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00011}{11}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+\Hypertarget{class_timer_bar_control_a19609b0c3ffe256b9076ebcf97df035e}\index{TimerBarControl@{TimerBarControl}!imageTimerBar@{imageTimerBar}}
+\index{imageTimerBar@{imageTimerBar}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{imageTimerBar}{imageTimerBar}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_a19609b0c3ffe256b9076ebcf97df035e} 
+Image Timer\+Bar\+Control.\+image\+Timer\+Bar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00009}{9}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+\Hypertarget{class_timer_bar_control_a2d15d792e1f1a3e599b9709cc8506267}\index{TimerBarControl@{TimerBarControl}!isTimeOut@{isTimeOut}}
+\index{isTimeOut@{isTimeOut}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{isTimeOut}{isTimeOut}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_a2d15d792e1f1a3e599b9709cc8506267} 
+bool Timer\+Bar\+Control.\+is\+Time\+Out = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+\Hypertarget{class_timer_bar_control_af079dfd6f693e37291371c1fe036a6de}\index{TimerBarControl@{TimerBarControl}!lifeControl@{lifeControl}}
+\index{lifeControl@{lifeControl}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{lifeControl}{lifeControl}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_af079dfd6f693e37291371c1fe036a6de} 
+\mbox{\hyperlink{class_life_control}{Life\+Control}} Timer\+Bar\+Control.\+life\+Control\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00010}{10}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+\Hypertarget{class_timer_bar_control_adf33778e019cd6acd64d70b9ec47fba3}\index{TimerBarControl@{TimerBarControl}!timeCounter@{timeCounter}}
+\index{timeCounter@{timeCounter}!TimerBarControl@{TimerBarControl}}
+\doxysubsubsection{\texorpdfstring{timeCounter}{timeCounter}}
+{\footnotesize\ttfamily \label{class_timer_bar_control_adf33778e019cd6acd64d70b9ec47fba3} 
+float Timer\+Bar\+Control.\+time\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_timer_bar_control_8cs_source_l00015}{15}} of file \mbox{\hyperlink{_timer_bar_control_8cs_source}{Timer\+Bar\+Control.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cheabora/\+Work\+Space/\+Game\+Dev/\+Freaking\+Math/\+Assets/\+Scripts/\mbox{\hyperlink{_timer_bar_control_8cs}{Timer\+Bar\+Control.\+cs}}\end{DoxyCompactItemize}

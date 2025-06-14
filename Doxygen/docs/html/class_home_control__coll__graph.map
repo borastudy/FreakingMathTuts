@@ -1,0 +1,9 @@
+<map id="HomeControl" name="HomeControl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,299,153,386"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="24,5,124,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,87,81,299,76,299,72,87"/>
+<area shape="rect" id="Node000003" href="$class_game_data_manager.html" title=" " alt="" coords="95,121,218,228"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="104,83,127,120,122,123,99,86"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,229,109,285,104,283,130,227"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="219,158,237,163,245,175,237,186,233,183,240,174,234,167,218,163"/>
+</map>

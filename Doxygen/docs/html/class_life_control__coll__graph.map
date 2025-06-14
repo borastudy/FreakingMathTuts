@@ -1,0 +1,5 @@
+<map id="LifeControl" name="LifeControl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,135,389"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="20,5,121,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,86,73,120,68,120,68,86"/>
+</map>

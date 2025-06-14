@@ -1,0 +1,27 @@
+\doxysection{Home\+Control.\+cs}
+\hypertarget{_home_control_8cs_source}{}\label{_home_control_8cs_source}\index{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/HomeControl.cs@{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/HomeControl.cs}}
+\mbox{\hyperlink{_home_control_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00006}\mbox{\hyperlink{class_home_control}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_home_control}{HomeControl}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00008}\mbox{\hyperlink{class_home_control_ac0b486b02cb11f59c94fd2fc46dce8eb}{00008}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_home_control_ac0b486b02cb11f59c94fd2fc46dce8eb}{textScore}};}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00009}\mbox{\hyperlink{class_home_control_ac59dbe8c737ea9ea63357b07a10b6b5d}{00009}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_game_data_manager}{GameDataManager}}\ \mbox{\hyperlink{class_home_control_ac59dbe8c737ea9ea63357b07a10b6b5d}{gameDataManager}};}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00011}\mbox{\hyperlink{class_home_control_aeda366bc4549f9df8fbe055eb5094923}{00011}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_home_control_aeda366bc4549f9df8fbe055eb5094923}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00012}00012\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_home_control_ac59dbe8c737ea9ea63357b07a10b6b5d}{gameDataManager}}\ =\ \mbox{\hyperlink{class_game_data_manager}{GameDataManager}}.\mbox{\hyperlink{class_game_data_manager_a151208f748ca2215722fdcaacecae1fd}{dataManager}};}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ textScore.text\ =\ \mbox{\hyperlink{class_home_control_ac59dbe8c737ea9ea63357b07a10b6b5d}{gameDataManager}}.HighScore.ToString();}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00017}\mbox{\hyperlink{class_home_control_a655f46c27f8901fd85386f597fd165ae}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_home_control_a655f46c27f8901fd85386f597fd165ae}{ClickToGameScene}}\ ()}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ UnityEngine.SceneManagement.SceneManager.LoadScene(\textcolor{stringliteral}{"{}GameScene"{}});}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_home_control_8cs_source_l00021}00021\ \}}
+
+\end{DoxyCode}

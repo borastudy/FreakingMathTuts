@@ -1,0 +1,36 @@
+\doxysection{Game\+Over\+Control.\+cs}
+\hypertarget{_game_over_control_8cs_source}{}\label{_game_over_control_8cs_source}\index{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/GameOverControl.cs@{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/GameOverControl.cs}}
+\mbox{\hyperlink{_game_over_control_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine.SceneManagement;}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00007}\mbox{\hyperlink{class_game_over_control}{00007}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_over_control}{GameOverControl}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00009}\mbox{\hyperlink{class_game_over_control_a31c455518935e4cd51701ff91f9e97ab}{00009}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_game_over_control_a31c455518935e4cd51701ff91f9e97ab}{textScore}};}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00010}\mbox{\hyperlink{class_game_over_control_af4d33af1158a6737282faed4e37f98c5}{00010}}\ \ \ \ \ [SerializeField]\ \mbox{\hyperlink{class_life_control}{LifeControl}}\ \mbox{\hyperlink{class_game_over_control_af4d33af1158a6737282faed4e37f98c5}{lifeControl}};}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00011}\mbox{\hyperlink{class_game_over_control_a721749826ea0a01655af8ba395e9260c}{00011}}\ \ \ \ \ [SerializeField]\ \mbox{\hyperlink{class_timer_bar_control}{TimerBarControl}}\ \mbox{\hyperlink{class_game_over_control_a721749826ea0a01655af8ba395e9260c}{timerBarControl}};}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00013}\mbox{\hyperlink{class_game_over_control_ab8fd8dc0e0cc6ab25510992be9a955cf}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_over_control_ab8fd8dc0e0cc6ab25510992be9a955cf}{SetScore}}(\textcolor{keywordtype}{int}\ score)}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00014}00014\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ textScore.text\ =\ score.ToString();}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00016}00016\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00018}\mbox{\hyperlink{class_game_over_control_a8daca6e8fc0cbc799863f10521be9f9a}{00018}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_over_control_a8daca6e8fc0cbc799863f10521be9f9a}{ClickToContinue}}\ ()}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00019}00019\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Clicked\ Button\ continue"{}});}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ gameObject.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_over_control_af4d33af1158a6737282faed4e37f98c5}{lifeControl}}.ResetLife();}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_over_control_a721749826ea0a01655af8ba395e9260c}{timerBarControl}}.Reset();}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00026}\mbox{\hyperlink{class_game_over_control_a7f587fbeb38163fed14bd3f6aa5eedba}{00026}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_over_control_a7f587fbeb38163fed14bd3f6aa5eedba}{ClickNoThankYou}}\ ()}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00027}00027\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ SceneManager.LoadScene(\textcolor{stringliteral}{"{}HomeScene"{}});}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00029}00029\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_over_control_8cs_source_l00030}00030\ \}}
+
+\end{DoxyCode}

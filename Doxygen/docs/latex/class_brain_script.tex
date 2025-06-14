@@ -1,0 +1,286 @@
+\doxysection{Brain\+Script Class Reference}
+\hypertarget{class_brain_script}{}\label{class_brain_script}\index{BrainScript@{BrainScript}}
+
+
+Inheritance diagram for Brain\+Script\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_brain_script__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Brain\+Script\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_brain_script__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_brain_script_a05c28dea443bf3fc0490c5201a3d7c72}{Generate\+Quiz}} ()
+\item 
+string \mbox{\hyperlink{class_brain_script_af96b045abb6b163c9ae84f62c074c441}{Get\+Question}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_brain_script_ad82f5f40fcf2133f80ad53da09862cb9}{Get\+Results}} ()
+\item 
+int \mbox{\hyperlink{class_brain_script_aca5688dcc3a2e43ffe34f7a60ee6f9c1}{Get\+Correct\+Result}} ()
+\item 
+int \mbox{\hyperlink{class_brain_script_af628121ff41021920b60f038a5858033}{Get\+Correct\+Result\+Index}} ()
+\item 
+void \mbox{\hyperlink{class_brain_script_a7488a704ae10ac733c1f103b412c96c9}{Shuffle}} (int\mbox{[}$\,$\mbox{]} arr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_brain_script_a4c108405bbb30b327a5dee1104d92e45}{Generate\+Fake\+Results}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_brain_script_aa81f0217d73ec574f8d6234f18ffbdca}{operandA}}
+\item 
+int \mbox{\hyperlink{class_brain_script_a9a1b14f78028e4fed276038c0fde2364}{operandB}}
+\item 
+int \mbox{\hyperlink{class_brain_script_a253b03b60e1f27ae3adc58f8e81d851f}{correct\+Result}}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_brain_script_a04bf1ffee6101d3af991eb001bf275ed}{results}}
+\item 
+string \mbox{\hyperlink{class_brain_script_a377eb5714c6e6b2b1d6f4ccddd363f35}{question}}
+\item 
+\mbox{\hyperlink{_brain_script_8cs_aba0102f3b76ac39cec7456893bed4131}{Math\+Operator}} \mbox{\hyperlink{class_brain_script_a3715b7bb50200dedf243a90985eb2f5b}{math\+Operator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_brain_script_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_brain_script_a4c108405bbb30b327a5dee1104d92e45}\index{BrainScript@{BrainScript}!GenerateFakeResults@{GenerateFakeResults}}
+\index{GenerateFakeResults@{GenerateFakeResults}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{GenerateFakeResults()}{GenerateFakeResults()}}
+{\footnotesize\ttfamily \label{class_brain_script_a4c108405bbb30b327a5dee1104d92e45} 
+void Brain\+Script.\+Generate\+Fake\+Results (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00074}{74}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_brain_script_8cs_source_l00018}{results}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_brain_script_a4c108405bbb30b327a5dee1104d92e45_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_brain_script_a05c28dea443bf3fc0490c5201a3d7c72}\index{BrainScript@{BrainScript}!GenerateQuiz@{GenerateQuiz}}
+\index{GenerateQuiz@{GenerateQuiz}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{GenerateQuiz()}{GenerateQuiz()}}
+{\footnotesize\ttfamily \label{class_brain_script_a05c28dea443bf3fc0490c5201a3d7c72} 
+void Brain\+Script.\+Generate\+Quiz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_brain_script_8cs_source_l00017}{correct\+Result}}, \mbox{\hyperlink{_brain_script_8cs_source_l00074}{Generate\+Fake\+Results()}}, \mbox{\hyperlink{_brain_script_8cs_source_l00020}{math\+Operator}}, \mbox{\hyperlink{_brain_script_8cs_source_l00015}{operandA}}, \mbox{\hyperlink{_brain_script_8cs_source_l00016}{operandB}}, \mbox{\hyperlink{_brain_script_8cs_source_l00019}{question}}, \mbox{\hyperlink{_brain_script_8cs_source_l00018}{results}}, and \mbox{\hyperlink{_brain_script_8cs_source_l00102}{Shuffle()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_brain_script_a05c28dea443bf3fc0490c5201a3d7c72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_brain_script_a05c28dea443bf3fc0490c5201a3d7c72_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_brain_script_aca5688dcc3a2e43ffe34f7a60ee6f9c1}\index{BrainScript@{BrainScript}!GetCorrectResult@{GetCorrectResult}}
+\index{GetCorrectResult@{GetCorrectResult}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{GetCorrectResult()}{GetCorrectResult()}}
+{\footnotesize\ttfamily \label{class_brain_script_aca5688dcc3a2e43ffe34f7a60ee6f9c1} 
+int Brain\+Script.\+Get\+Correct\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00093}{93}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_brain_script_8cs_source_l00017}{correct\+Result}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_brain_script_aca5688dcc3a2e43ffe34f7a60ee6f9c1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_brain_script_af628121ff41021920b60f038a5858033}\index{BrainScript@{BrainScript}!GetCorrectResultIndex@{GetCorrectResultIndex}}
+\index{GetCorrectResultIndex@{GetCorrectResultIndex}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{GetCorrectResultIndex()}{GetCorrectResultIndex()}}
+{\footnotesize\ttfamily \label{class_brain_script_af628121ff41021920b60f038a5858033} 
+int Brain\+Script.\+Get\+Correct\+Result\+Index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00097}{97}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_brain_script_8cs_source_l00017}{correct\+Result}}, and \mbox{\hyperlink{_brain_script_8cs_source_l00018}{results}}.
+
+\Hypertarget{class_brain_script_af96b045abb6b163c9ae84f62c074c441}\index{BrainScript@{BrainScript}!GetQuestion@{GetQuestion}}
+\index{GetQuestion@{GetQuestion}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{GetQuestion()}{GetQuestion()}}
+{\footnotesize\ttfamily \label{class_brain_script_af96b045abb6b163c9ae84f62c074c441} 
+string Brain\+Script.\+Get\+Question (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00085}{85}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_brain_script_8cs_source_l00019}{question}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_brain_script_af96b045abb6b163c9ae84f62c074c441_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_brain_script_ad82f5f40fcf2133f80ad53da09862cb9}\index{BrainScript@{BrainScript}!GetResults@{GetResults}}
+\index{GetResults@{GetResults}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{GetResults()}{GetResults()}}
+{\footnotesize\ttfamily \label{class_brain_script_ad82f5f40fcf2133f80ad53da09862cb9} 
+int\mbox{[}$\,$\mbox{]} Brain\+Script.\+Get\+Results (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00089}{89}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_brain_script_8cs_source_l00018}{results}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_brain_script_ad82f5f40fcf2133f80ad53da09862cb9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_brain_script_a7488a704ae10ac733c1f103b412c96c9}\index{BrainScript@{BrainScript}!Shuffle@{Shuffle}}
+\index{Shuffle@{Shuffle}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{Shuffle()}{Shuffle()}}
+{\footnotesize\ttfamily \label{class_brain_script_a7488a704ae10ac733c1f103b412c96c9} 
+void Brain\+Script.\+Shuffle (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{arr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00102}{102}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_brain_script_a7488a704ae10ac733c1f103b412c96c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_brain_script_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_brain_script_a253b03b60e1f27ae3adc58f8e81d851f}\index{BrainScript@{BrainScript}!correctResult@{correctResult}}
+\index{correctResult@{correctResult}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{correctResult}{correctResult}}
+{\footnotesize\ttfamily \label{class_brain_script_a253b03b60e1f27ae3adc58f8e81d851f} 
+int Brain\+Script.\+correct\+Result\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+\Hypertarget{class_brain_script_a3715b7bb50200dedf243a90985eb2f5b}\index{BrainScript@{BrainScript}!mathOperator@{mathOperator}}
+\index{mathOperator@{mathOperator}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{mathOperator}{mathOperator}}
+{\footnotesize\ttfamily \label{class_brain_script_a3715b7bb50200dedf243a90985eb2f5b} 
+\mbox{\hyperlink{_brain_script_8cs_aba0102f3b76ac39cec7456893bed4131}{Math\+Operator}} Brain\+Script.\+math\+Operator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00020}{20}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+\Hypertarget{class_brain_script_aa81f0217d73ec574f8d6234f18ffbdca}\index{BrainScript@{BrainScript}!operandA@{operandA}}
+\index{operandA@{operandA}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{operandA}{operandA}}
+{\footnotesize\ttfamily \label{class_brain_script_aa81f0217d73ec574f8d6234f18ffbdca} 
+int Brain\+Script.\+operandA\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00015}{15}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+\Hypertarget{class_brain_script_a9a1b14f78028e4fed276038c0fde2364}\index{BrainScript@{BrainScript}!operandB@{operandB}}
+\index{operandB@{operandB}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{operandB}{operandB}}
+{\footnotesize\ttfamily \label{class_brain_script_a9a1b14f78028e4fed276038c0fde2364} 
+int Brain\+Script.\+operandB\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+\Hypertarget{class_brain_script_a377eb5714c6e6b2b1d6f4ccddd363f35}\index{BrainScript@{BrainScript}!question@{question}}
+\index{question@{question}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{question}{question}}
+{\footnotesize\ttfamily \label{class_brain_script_a377eb5714c6e6b2b1d6f4ccddd363f35} 
+string Brain\+Script.\+question\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00019}{19}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+\Hypertarget{class_brain_script_a04bf1ffee6101d3af991eb001bf275ed}\index{BrainScript@{BrainScript}!results@{results}}
+\index{results@{results}!BrainScript@{BrainScript}}
+\doxysubsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily \label{class_brain_script_a04bf1ffee6101d3af991eb001bf275ed} 
+int \mbox{[}$\,$\mbox{]} Brain\+Script.\+results\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_brain_script_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_brain_script_8cs_source}{Brain\+Script.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cheabora/\+Work\+Space/\+Game\+Dev/\+Freaking\+Math/\+Assets/\+Scripts/\mbox{\hyperlink{_brain_script_8cs}{Brain\+Script.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+var class_game_control =
+[
+    [ "GenerateQuestion", "class_game_control.html#a242ddae70b3374fd3e83996d72abcd90", null ],
+    [ "GiveAnswer", "class_game_control.html#af2d38bd3ca66d46a7a73853bbcb3ebd5", null ],
+    [ "HandleClick", "class_game_control.html#ac0c8429f8abb8062eef888e2e6b1b717", null ],
+    [ "ResetBonusLife", "class_game_control.html#ab18ac0d22c4b572ff38d3c86ad2c64db", null ],
+    [ "ShowGameOver", "class_game_control.html#ac4021786cf0a7493a0f75463f64b85f0", null ],
+    [ "Start", "class_game_control.html#a90bb61c5919b88cd2ab4c33a8fc53219", null ],
+    [ "brainScript", "class_game_control.html#adf7ad61b7585e57829a4320e01318803", null ],
+    [ "correctResult", "class_game_control.html#afa2dbe61b997658847b55765b6c90903", null ],
+    [ "countCorrect", "class_game_control.html#a17ef5cae786a4d241ef57f1c0623e79d", null ],
+    [ "gameDataManager", "class_game_control.html#ac7c02ea48a208ebf30f5e6e874b68d42", null ],
+    [ "gameOverControl", "class_game_control.html#a4d3a3999dcd91e6ecb5d512f8df0127e", null ],
+    [ "hands", "class_game_control.html#a046fb220e84142e5b747388501a09ddb", null ],
+    [ "imageBonusLife", "class_game_control.html#a7445e18bd2ac8b13fc7bf02105f30449", null ],
+    [ "lifeControl", "class_game_control.html#a8e0edc3ece0ba6709049006d8cb5c878", null ],
+    [ "score", "class_game_control.html#a529c6445db3c38661c5ee5d5a92ac0a3", null ],
+    [ "textAnswer1", "class_game_control.html#a0302cd3c9e971b8fcef312f35f068790", null ],
+    [ "textAnswer2", "class_game_control.html#a2e28681b3fbe9e8777d9b4541999bb88", null ],
+    [ "textAnswer3", "class_game_control.html#aa3bf26160aee8648a3e97a1286c5df3a", null ],
+    [ "textAnswer4", "class_game_control.html#a3df0602fdd817cd9ecad8159c12ea62e", null ],
+    [ "textQuestion", "class_game_control.html#a31ae43dc92c70b2b0f30255a2c930af6", null ],
+    [ "textScore", "class_game_control.html#aabc12103279f7e394c8edf9c76e34160", null ],
+    [ "timerBarControl", "class_game_control.html#ae388f0b78fe766088cf656a5ca725835", null ]
+];

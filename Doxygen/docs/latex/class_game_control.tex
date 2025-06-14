@@ -1,0 +1,392 @@
+\doxysection{Game\+Control Class Reference}
+\hypertarget{class_game_control}{}\label{class_game_control}\index{GameControl@{GameControl}}
+
+
+Inheritance diagram for Game\+Control\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_game_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Control\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_game_control__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_control_af2d38bd3ca66d46a7a73853bbcb3ebd5}{Give\+Answer}} ()
+\item 
+void \mbox{\hyperlink{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717}{Handle\+Click}} (int index)
+\item 
+void \mbox{\hyperlink{class_game_control_ab18ac0d22c4b572ff38d3c86ad2c64db}{Reset\+Bonus\+Life}} ()
+\item 
+void \mbox{\hyperlink{class_game_control_ac4021786cf0a7493a0f75463f64b85f0}{Show\+Game\+Over}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_control_a90bb61c5919b88cd2ab4c33a8fc53219}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_game_control_a242ddae70b3374fd3e83996d72abcd90}{Generate\+Question}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_game_control_a046fb220e84142e5b747388501a09ddb}{hands}}
+\item 
+Text \mbox{\hyperlink{class_game_control_aabc12103279f7e394c8edf9c76e34160}{text\+Score}}
+\item 
+Text \mbox{\hyperlink{class_game_control_a31ae43dc92c70b2b0f30255a2c930af6}{text\+Question}}
+\item 
+\mbox{\hyperlink{class_brain_script}{Brain\+Script}} \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brain\+Script}}
+\item 
+\mbox{\hyperlink{class_life_control}{Life\+Control}} \mbox{\hyperlink{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}{life\+Control}}
+\item 
+Text \mbox{\hyperlink{class_game_control_a0302cd3c9e971b8fcef312f35f068790}{text\+Answer1}}
+\item 
+Text \mbox{\hyperlink{class_game_control_a2e28681b3fbe9e8777d9b4541999bb88}{text\+Answer2}}
+\item 
+Text \mbox{\hyperlink{class_game_control_aa3bf26160aee8648a3e97a1286c5df3a}{text\+Answer3}}
+\item 
+Text \mbox{\hyperlink{class_game_control_a3df0602fdd817cd9ecad8159c12ea62e}{text\+Answer4}}
+\item 
+\mbox{\hyperlink{class_game_over_control}{Game\+Over\+Control}} \mbox{\hyperlink{class_game_control_a4d3a3999dcd91e6ecb5d512f8df0127e}{game\+Over\+Control}}
+\item 
+\mbox{\hyperlink{class_timer_bar_control}{Timer\+Bar\+Control}} \mbox{\hyperlink{class_game_control_ae388f0b78fe766088cf656a5ca725835}{timer\+Bar\+Control}}
+\item 
+Image \mbox{\hyperlink{class_game_control_a7445e18bd2ac8b13fc7bf02105f30449}{image\+Bonus\+Life}}
+\item 
+\mbox{\hyperlink{class_game_data_manager}{Game\+Data\+Manager}} \mbox{\hyperlink{class_game_control_ac7c02ea48a208ebf30f5e6e874b68d42}{game\+Data\+Manager}}
+\item 
+int \mbox{\hyperlink{class_game_control_afa2dbe61b997658847b55765b6c90903}{correct\+Result}} = -\/1
+\item 
+int \mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}} = 0
+\item 
+int \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{count\+Correct}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00006}{6}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_game_control_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_control_a242ddae70b3374fd3e83996d72abcd90}\index{GameControl@{GameControl}!GenerateQuestion@{GenerateQuestion}}
+\index{GenerateQuestion@{GenerateQuestion}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{GenerateQuestion()}{GenerateQuestion()}}
+{\footnotesize\ttfamily \label{class_game_control_a242ddae70b3374fd3e83996d72abcd90} 
+void Game\+Control.\+Generate\+Question (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00040}{40}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_game_control_8cs_source_l00012}{brain\+Script}}, \mbox{\hyperlink{_game_control_8cs_source_l00027}{correct\+Result}}, \mbox{\hyperlink{_brain_script_8cs_source_l00024}{Brain\+Script.\+Generate\+Quiz()}}, \mbox{\hyperlink{_brain_script_8cs_source_l00093}{Brain\+Script.\+Get\+Correct\+Result()}}, \mbox{\hyperlink{_brain_script_8cs_source_l00085}{Brain\+Script.\+Get\+Question()}}, and \mbox{\hyperlink{_brain_script_8cs_source_l00089}{Brain\+Script.\+Get\+Results()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_control_a242ddae70b3374fd3e83996d72abcd90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_control_a242ddae70b3374fd3e83996d72abcd90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_control_af2d38bd3ca66d46a7a73853bbcb3ebd5}\index{GameControl@{GameControl}!GiveAnswer@{GiveAnswer}}
+\index{GiveAnswer@{GiveAnswer}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{GiveAnswer()}{GiveAnswer()}}
+{\footnotesize\ttfamily \label{class_game_control_af2d38bd3ca66d46a7a73853bbcb3ebd5} 
+void Game\+Control.\+Give\+Answer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00061}{61}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_game_control_8cs_source_l00012}{brain\+Script}}, \mbox{\hyperlink{_game_control_8cs_source_l00068}{Handle\+Click()}}, and \mbox{\hyperlink{_game_control_8cs_source_l00008}{hands}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_control_af2d38bd3ca66d46a7a73853bbcb3ebd5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717}\index{GameControl@{GameControl}!HandleClick@{HandleClick}}
+\index{HandleClick@{HandleClick}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{HandleClick()}{HandleClick()}}
+{\footnotesize\ttfamily \label{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717} 
+void Game\+Control.\+Handle\+Click (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00068}{68}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_game_control_8cs_source_l00012}{brain\+Script}}, \mbox{\hyperlink{_game_control_8cs_source_l00027}{correct\+Result}}, \mbox{\hyperlink{_game_control_8cs_source_l00030}{count\+Correct}}, \mbox{\hyperlink{_game_control_8cs_source_l00040}{Generate\+Question()}}, \mbox{\hyperlink{_game_control_8cs_source_l00013}{life\+Control}}, \mbox{\hyperlink{_game_control_8cs_source_l00028}{score}}, \mbox{\hyperlink{_game_control_8cs_source_l00123}{Show\+Game\+Over()}}, and \mbox{\hyperlink{_game_control_8cs_source_l00021}{timer\+Bar\+Control}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_control_ab18ac0d22c4b572ff38d3c86ad2c64db}\index{GameControl@{GameControl}!ResetBonusLife@{ResetBonusLife}}
+\index{ResetBonusLife@{ResetBonusLife}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{ResetBonusLife()}{ResetBonusLife()}}
+{\footnotesize\ttfamily \label{class_game_control_ab18ac0d22c4b572ff38d3c86ad2c64db} 
+void Game\+Control.\+Reset\+Bonus\+Life (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00117}{117}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_game_control_8cs_source_l00030}{count\+Correct}}.
+
+\Hypertarget{class_game_control_ac4021786cf0a7493a0f75463f64b85f0}\index{GameControl@{GameControl}!ShowGameOver@{ShowGameOver}}
+\index{ShowGameOver@{ShowGameOver}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{ShowGameOver()}{ShowGameOver()}}
+{\footnotesize\ttfamily \label{class_game_control_ac4021786cf0a7493a0f75463f64b85f0} 
+void Game\+Control.\+Show\+Game\+Over (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00123}{123}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_game_control_8cs_source_l00024}{game\+Data\+Manager}}, \mbox{\hyperlink{_game_control_8cs_source_l00020}{game\+Over\+Control}}, and \mbox{\hyperlink{_game_control_8cs_source_l00028}{score}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_control_ac4021786cf0a7493a0f75463f64b85f0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_control_a90bb61c5919b88cd2ab4c33a8fc53219}\index{GameControl@{GameControl}!Start@{Start}}
+\index{Start@{Start}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_game_control_a90bb61c5919b88cd2ab4c33a8fc53219} 
+void Game\+Control.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00032}{32}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+References \mbox{\hyperlink{_game_data_manager_8cs_source_l00023}{Game\+Data\+Manager.\+data\+Manager}}, \mbox{\hyperlink{_game_control_8cs_source_l00024}{game\+Data\+Manager}}, and \mbox{\hyperlink{_game_control_8cs_source_l00040}{Generate\+Question()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_control_a90bb61c5919b88cd2ab4c33a8fc53219_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_game_control_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_game_control_adf7ad61b7585e57829a4320e01318803}\index{GameControl@{GameControl}!brainScript@{brainScript}}
+\index{brainScript@{brainScript}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{brainScript}{brainScript}}
+{\footnotesize\ttfamily \label{class_game_control_adf7ad61b7585e57829a4320e01318803} 
+\mbox{\hyperlink{class_brain_script}{Brain\+Script}} Game\+Control.\+brain\+Script\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00012}{12}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_afa2dbe61b997658847b55765b6c90903}\index{GameControl@{GameControl}!correctResult@{correctResult}}
+\index{correctResult@{correctResult}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{correctResult}{correctResult}}
+{\footnotesize\ttfamily \label{class_game_control_afa2dbe61b997658847b55765b6c90903} 
+int Game\+Control.\+correct\+Result = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00027}{27}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}\index{GameControl@{GameControl}!countCorrect@{countCorrect}}
+\index{countCorrect@{countCorrect}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{countCorrect}{countCorrect}}
+{\footnotesize\ttfamily \label{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d} 
+int Game\+Control.\+count\+Correct = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00030}{30}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_ac7c02ea48a208ebf30f5e6e874b68d42}\index{GameControl@{GameControl}!gameDataManager@{gameDataManager}}
+\index{gameDataManager@{gameDataManager}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{gameDataManager}{gameDataManager}}
+{\footnotesize\ttfamily \label{class_game_control_ac7c02ea48a208ebf30f5e6e874b68d42} 
+\mbox{\hyperlink{class_game_data_manager}{Game\+Data\+Manager}} Game\+Control.\+game\+Data\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a4d3a3999dcd91e6ecb5d512f8df0127e}\index{GameControl@{GameControl}!gameOverControl@{gameOverControl}}
+\index{gameOverControl@{gameOverControl}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{gameOverControl}{gameOverControl}}
+{\footnotesize\ttfamily \label{class_game_control_a4d3a3999dcd91e6ecb5d512f8df0127e} 
+\mbox{\hyperlink{class_game_over_control}{Game\+Over\+Control}} Game\+Control.\+game\+Over\+Control\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00020}{20}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a046fb220e84142e5b747388501a09ddb}\index{GameControl@{GameControl}!hands@{hands}}
+\index{hands@{hands}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{hands}{hands}}
+{\footnotesize\ttfamily \label{class_game_control_a046fb220e84142e5b747388501a09ddb} 
+Game\+Object \mbox{[}$\,$\mbox{]} Game\+Control.\+hands\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00008}{8}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a7445e18bd2ac8b13fc7bf02105f30449}\index{GameControl@{GameControl}!imageBonusLife@{imageBonusLife}}
+\index{imageBonusLife@{imageBonusLife}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{imageBonusLife}{imageBonusLife}}
+{\footnotesize\ttfamily \label{class_game_control_a7445e18bd2ac8b13fc7bf02105f30449} 
+Image Game\+Control.\+image\+Bonus\+Life\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00022}{22}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}\index{GameControl@{GameControl}!lifeControl@{lifeControl}}
+\index{lifeControl@{lifeControl}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{lifeControl}{lifeControl}}
+{\footnotesize\ttfamily \label{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878} 
+\mbox{\hyperlink{class_life_control}{Life\+Control}} Game\+Control.\+life\+Control\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}\index{GameControl@{GameControl}!score@{score}}
+\index{score@{score}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily \label{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3} 
+int Game\+Control.\+score = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00028}{28}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a0302cd3c9e971b8fcef312f35f068790}\index{GameControl@{GameControl}!textAnswer1@{textAnswer1}}
+\index{textAnswer1@{textAnswer1}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{textAnswer1}{textAnswer1}}
+{\footnotesize\ttfamily \label{class_game_control_a0302cd3c9e971b8fcef312f35f068790} 
+Text Game\+Control.\+text\+Answer1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00015}{15}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a2e28681b3fbe9e8777d9b4541999bb88}\index{GameControl@{GameControl}!textAnswer2@{textAnswer2}}
+\index{textAnswer2@{textAnswer2}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{textAnswer2}{textAnswer2}}
+{\footnotesize\ttfamily \label{class_game_control_a2e28681b3fbe9e8777d9b4541999bb88} 
+Text Game\+Control.\+text\+Answer2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_aa3bf26160aee8648a3e97a1286c5df3a}\index{GameControl@{GameControl}!textAnswer3@{textAnswer3}}
+\index{textAnswer3@{textAnswer3}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{textAnswer3}{textAnswer3}}
+{\footnotesize\ttfamily \label{class_game_control_aa3bf26160aee8648a3e97a1286c5df3a} 
+Text Game\+Control.\+text\+Answer3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a3df0602fdd817cd9ecad8159c12ea62e}\index{GameControl@{GameControl}!textAnswer4@{textAnswer4}}
+\index{textAnswer4@{textAnswer4}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{textAnswer4}{textAnswer4}}
+{\footnotesize\ttfamily \label{class_game_control_a3df0602fdd817cd9ecad8159c12ea62e} 
+Text Game\+Control.\+text\+Answer4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_a31ae43dc92c70b2b0f30255a2c930af6}\index{GameControl@{GameControl}!textQuestion@{textQuestion}}
+\index{textQuestion@{textQuestion}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{textQuestion}{textQuestion}}
+{\footnotesize\ttfamily \label{class_game_control_a31ae43dc92c70b2b0f30255a2c930af6} 
+Text Game\+Control.\+text\+Question\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00011}{11}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_aabc12103279f7e394c8edf9c76e34160}\index{GameControl@{GameControl}!textScore@{textScore}}
+\index{textScore@{textScore}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{textScore}{textScore}}
+{\footnotesize\ttfamily \label{class_game_control_aabc12103279f7e394c8edf9c76e34160} 
+Text Game\+Control.\+text\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00010}{10}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+\Hypertarget{class_game_control_ae388f0b78fe766088cf656a5ca725835}\index{GameControl@{GameControl}!timerBarControl@{timerBarControl}}
+\index{timerBarControl@{timerBarControl}!GameControl@{GameControl}}
+\doxysubsubsection{\texorpdfstring{timerBarControl}{timerBarControl}}
+{\footnotesize\ttfamily \label{class_game_control_ae388f0b78fe766088cf656a5ca725835} 
+\mbox{\hyperlink{class_timer_bar_control}{Timer\+Bar\+Control}} Game\+Control.\+timer\+Bar\+Control\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_game_control_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_game_control_8cs_source}{Game\+Control.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/cheabora/\+Work\+Space/\+Game\+Dev/\+Freaking\+Math/\+Assets/\+Scripts/\mbox{\hyperlink{_game_control_8cs}{Game\+Control.\+cs}}\end{DoxyCompactItemize}

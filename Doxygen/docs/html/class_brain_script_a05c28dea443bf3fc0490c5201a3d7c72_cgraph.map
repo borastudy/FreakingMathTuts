@@ -1,0 +1,7 @@
+<map id="BrainScript.GenerateQuiz" name="BrainScript.GenerateQuiz">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,175,68"/>
+<area shape="rect" id="Node000002" href="$class_brain_script.html#a4c108405bbb30b327a5dee1104d92e45" title=" " alt="" coords="223,5,394,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,41,207,37,208,42,176,46"/>
+<area shape="rect" id="Node000003" href="$class_brain_script.html#a7488a704ae10ac733c1f103b412c96c9" title=" " alt="" coords="243,70,374,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,63,228,70,228,75,175,69"/>
+</map>

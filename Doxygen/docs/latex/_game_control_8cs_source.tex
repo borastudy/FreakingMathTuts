@@ -1,0 +1,145 @@
+\doxysection{Game\+Control.\+cs}
+\hypertarget{_game_control_8cs_source}{}\label{_game_control_8cs_source}\index{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/GameControl.cs@{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/GameControl.cs}}
+\mbox{\hyperlink{_game_control_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00006}\mbox{\hyperlink{class_game_control}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_control}{GameControl}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00008}\mbox{\hyperlink{class_game_control_a046fb220e84142e5b747388501a09ddb}{00008}}\ \ \ \ \ [SerializeField]\ GameObject[]\ \mbox{\hyperlink{class_game_control_a046fb220e84142e5b747388501a09ddb}{hands}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00010}\mbox{\hyperlink{class_game_control_aabc12103279f7e394c8edf9c76e34160}{00010}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_game_control_aabc12103279f7e394c8edf9c76e34160}{textScore}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00011}\mbox{\hyperlink{class_game_control_a31ae43dc92c70b2b0f30255a2c930af6}{00011}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_game_control_a31ae43dc92c70b2b0f30255a2c930af6}{textQuestion}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00012}\mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{00012}}\ \ \ \ \ [SerializeField]\ \mbox{\hyperlink{class_brain_script}{BrainScript}}\ \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brainScript}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00013}\mbox{\hyperlink{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}{00013}}\ \ \ \ \ [SerializeField]\ \mbox{\hyperlink{class_life_control}{LifeControl}}\ \mbox{\hyperlink{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}{lifeControl}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00015}\mbox{\hyperlink{class_game_control_a0302cd3c9e971b8fcef312f35f068790}{00015}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_game_control_a0302cd3c9e971b8fcef312f35f068790}{textAnswer1}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00016}\mbox{\hyperlink{class_game_control_a2e28681b3fbe9e8777d9b4541999bb88}{00016}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_game_control_a2e28681b3fbe9e8777d9b4541999bb88}{textAnswer2}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00017}\mbox{\hyperlink{class_game_control_aa3bf26160aee8648a3e97a1286c5df3a}{00017}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_game_control_aa3bf26160aee8648a3e97a1286c5df3a}{textAnswer3}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00018}\mbox{\hyperlink{class_game_control_a3df0602fdd817cd9ecad8159c12ea62e}{00018}}\ \ \ \ \ [SerializeField]\ Text\ \mbox{\hyperlink{class_game_control_a3df0602fdd817cd9ecad8159c12ea62e}{textAnswer4}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00020}\mbox{\hyperlink{class_game_control_a4d3a3999dcd91e6ecb5d512f8df0127e}{00020}}\ \ \ \ \ [SerializeField]\ \mbox{\hyperlink{class_game_over_control}{GameOverControl}}\ \mbox{\hyperlink{class_game_control_a4d3a3999dcd91e6ecb5d512f8df0127e}{gameOverControl}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00021}\mbox{\hyperlink{class_game_control_ae388f0b78fe766088cf656a5ca725835}{00021}}\ \ \ \ \ [SerializeField]\ \mbox{\hyperlink{class_timer_bar_control}{TimerBarControl}}\ \mbox{\hyperlink{class_game_control_ae388f0b78fe766088cf656a5ca725835}{timerBarControl}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00022}\mbox{\hyperlink{class_game_control_a7445e18bd2ac8b13fc7bf02105f30449}{00022}}\ \ \ \ \ [SerializeField]\ Image\ \mbox{\hyperlink{class_game_control_a7445e18bd2ac8b13fc7bf02105f30449}{imageBonusLife}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00024}\mbox{\hyperlink{class_game_control_ac7c02ea48a208ebf30f5e6e874b68d42}{00024}}\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_game_data_manager}{GameDataManager}}\ \mbox{\hyperlink{class_game_control_ac7c02ea48a208ebf30f5e6e874b68d42}{gameDataManager}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00027}\mbox{\hyperlink{class_game_control_afa2dbe61b997658847b55765b6c90903}{00027}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_control_afa2dbe61b997658847b55765b6c90903}{correctResult}}\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00028}\mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{00028}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00030}\mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{00030}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00032}\mbox{\hyperlink{class_game_control_a90bb61c5919b88cd2ab4c33a8fc53219}{00032}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_control_a90bb61c5919b88cd2ab4c33a8fc53219}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00033}00033\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a242ddae70b3374fd3e83996d72abcd90}{GenerateQuestion}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_ac7c02ea48a208ebf30f5e6e874b68d42}{gameDataManager}}\ =\ \mbox{\hyperlink{class_game_data_manager}{GameDataManager}}.\mbox{\hyperlink{class_game_data_manager_a151208f748ca2215722fdcaacecae1fd}{dataManager}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ imageBonusLife.fillAmount\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00040}\mbox{\hyperlink{class_game_control_a242ddae70b3374fd3e83996d72abcd90}{00040}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_control_a242ddae70b3374fd3e83996d72abcd90}{GenerateQuestion}}()}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00041}00041\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brainScript}}.GenerateQuiz();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ textQuestion.text\ =\ \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brainScript}}.GetQuestion();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ var\ results\ =\ \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brainScript}}.GetResults();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_afa2dbe61b997658847b55765b6c90903}{correctResult}}\ =\ \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brainScript}}.GetCorrectResult();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ textAnswer1.text\ =\ results[0].ToString();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ textAnswer2.text\ =\ results[1].ToString();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ textAnswer3.text\ =\ results[2].ToString();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ textAnswer4.text\ =\ results[3].ToString();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_brain_script}{BrainScript}}().\mbox{\hyperlink{class_brain_script_a05c28dea443bf3fc0490c5201a3d7c72}{GenerateQuiz}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_brain_script}{BrainScript}}().\mbox{\hyperlink{class_brain_script_af96b045abb6b163c9ae84f62c074c441}{GetQuestion}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_brain_script}{BrainScript}}().\mbox{\hyperlink{class_brain_script_ad82f5f40fcf2133f80ad53da09862cb9}{GetResults}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_brain_script}{BrainScript}}().\mbox{\hyperlink{class_brain_script_aca5688dcc3a2e43ffe34f7a60ee6f9c1}{GetCorrectResult}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00061}\mbox{\hyperlink{class_game_control_af2d38bd3ca66d46a7a73853bbcb3ebd5}{00061}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_control_af2d38bd3ca66d46a7a73853bbcb3ebd5}{GiveAnswer}}()}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00062}00062\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ var\ correctIndex\ =\ \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brainScript}}.GetCorrectResultIndex();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a046fb220e84142e5b747388501a09ddb}{hands}}[correctIndex].SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717}{HandleClick}}(correctIndex);}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00066}00066\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00068}\mbox{\hyperlink{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717}{00068}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_control_ac0c8429f8abb8062eef888e2e6b1b717}{HandleClick}}\ (\textcolor{keywordtype}{int}\ index)}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00069}00069\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}You\ click\ me\ :\ "{}}\ +\ index);}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ var\ results\ =\ \mbox{\hyperlink{class_game_control_adf7ad61b7585e57829a4320e01318803}{brainScript}}.GetResults();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ var\ chosenNumber\ =\ results[index];}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Number\ :\ "{}}\ +\ chosenNumber);}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (chosenNumber\ ==\ \mbox{\hyperlink{class_game_control_afa2dbe61b997658847b55765b6c90903}{correctResult}})}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//increase\ score}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}}\ =\ \mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}}\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ textScore.text\ =\ \mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}}.ToString();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a242ddae70b3374fd3e83996d72abcd90}{GenerateQuestion}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Score\ :\ "{}}\ +\ \mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}});}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}++;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}\ ==\ 10)}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}{lifeControl}}.AddLife();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//use\ life\ control}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}{lifeControl}}.RemoveLife();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}{lifeControl}}.StillHasLife())}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a242ddae70b3374fd3e83996d72abcd90}{GenerateQuestion}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_ac4021786cf0a7493a0f75463f64b85f0}{ShowGameOver}}();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_ae388f0b78fe766088cf656a5ca725835}{timerBarControl}}.Pause();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_game_control_a8e0edc3ece0ba6709049006d8cb5c878}{lifeControl}}.StillHasLife())}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//call\ to\ reset\ timerbar}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_ae388f0b78fe766088cf656a5ca725835}{timerBarControl}}.Reset();}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ imageBonusLife.fillAmount\ =\ \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}\ /\ 10.0f;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00115}00115\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00117}\mbox{\hyperlink{class_game_control_ab18ac0d22c4b572ff38d3c86ad2c64db}{00117}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_control_ab18ac0d22c4b572ff38d3c86ad2c64db}{ResetBonusLife}}()}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00118}00118\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ imageBonusLife.fillAmount\ =\ \mbox{\hyperlink{class_game_control_a17ef5cae786a4d241ef57f1c0623e79d}{countCorrect}}\ /\ 10.0f;}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00121}00121\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00123}\mbox{\hyperlink{class_game_control_ac4021786cf0a7493a0f75463f64b85f0}{00123}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_control_ac4021786cf0a7493a0f75463f64b85f0}{ShowGameOver}}\ ()}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00124}00124\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \textcolor{comment}{//display\ game\ over}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00126}00126\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}===GAME\ OVER==="{}});}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{comment}{//gameOverPanel.SetActive(true);}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{comment}{//gameOverPanel.GetComponent<GameOverControl>().SetScore(score);}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a4d3a3999dcd91e6ecb5d512f8df0127e}{gameOverControl}}.gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_control_a4d3a3999dcd91e6ecb5d512f8df0127e}{gameOverControl}}.SetScore(\mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}});}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}}\ >\ \mbox{\hyperlink{class_game_control_ac7c02ea48a208ebf30f5e6e874b68d42}{gameDataManager}}.HighScore)}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//keep\ new\ highscore}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ gameDataManager.HighScore\ =\ \mbox{\hyperlink{class_game_control_a529c6445db3c38661c5ee5d5a92ac0a3}{score}};}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00137}00137\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00138}00138\ \ \ }
+\DoxyCodeLine{\Hypertarget{_game_control_8cs_source_l00139}00139\ \}\textcolor{comment}{//class}}
+
+\end{DoxyCode}

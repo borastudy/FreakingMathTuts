@@ -1,0 +1,47 @@
+\doxysection{Game\+Data\+Manager.\+cs}
+\hypertarget{_game_data_manager_8cs_source}{}\label{_game_data_manager_8cs_source}\index{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/GameDataManager.cs@{/Users/cheabora/WorkSpace/GameDev/FreakingMath/Assets/Scripts/GameDataManager.cs}}
+\mbox{\hyperlink{_game_data_manager_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00005}\mbox{\hyperlink{class_game_data_manager}{00005}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_data_manager}{GameDataManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00007}00007\ \ \ \ \ \textcolor{comment}{//public\ int\ HighScore\ \{\ get;\ set;\ \}}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00008}\mbox{\hyperlink{class_game_data_manager_a8bde578ae0fe4150ad24942b98c0315b}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_game_data_manager_a8bde578ae0fe4150ad24942b98c0315b}{HighScore}}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00009}00009\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00010}00010\ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Get\ HighScore"{}});}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ PlayerPrefs.GetInt(\textcolor{stringliteral}{"{}my\_last\_high\_score"{}});}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Set\ HighScore"{}});}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ PlayerPrefs.SetInt(\textcolor{stringliteral}{"{}my\_last\_high\_score"{}},\ value);}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00023}\mbox{\hyperlink{class_game_data_manager_a151208f748ca2215722fdcaacecae1fd}{00023}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_game_data_manager}{GameDataManager}}\ \mbox{\hyperlink{class_game_data_manager_a151208f748ca2215722fdcaacecae1fd}{dataManager}};}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00025}\mbox{\hyperlink{class_game_data_manager_a942d58e58d03f9340e5c51d0e50053bd}{00025}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_data_manager_a942d58e58d03f9340e5c51d0e50053bd}{Awake}}()}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00026}00026\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ DontDestroyOnLoad(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_data_manager_a151208f748ca2215722fdcaacecae1fd}{dataManager}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//PlayerPrefs.DeleteKey("{}my\_last\_high\_score"{});}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00031}00031\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00033}\mbox{\hyperlink{class_game_data_manager_a2ee0555d402934c958f5817b20c158e3}{00033}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_data_manager_a2ee0555d402934c958f5817b20c158e3}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00034}00034\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Game\ data\ manager\ started.."{}});}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00037}\mbox{\hyperlink{class_game_data_manager_a0afc15fa8326c3b8ac8ad049f77899c4}{00037}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_data_manager_a0afc15fa8326c3b8ac8ad049f77899c4}{OnDestroy}}()}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00038}00038\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Game\ data\ manager\ ended.."{}});}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_data_manager_8cs_source_l00041}00041\ \}}
+
+\end{DoxyCode}
