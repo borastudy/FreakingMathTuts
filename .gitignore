@@ -3,3 +3,5 @@ Logs
 obj
 Temp
 .vs/FreakingMath/xs
+.vscode
+Assembly-CSharp.csproj
