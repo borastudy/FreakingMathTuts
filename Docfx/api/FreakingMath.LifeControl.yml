@@ -1,0 +1,624 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.LifeControl
+  commentId: T:FreakingMath.LifeControl
+  id: LifeControl
+  parent: FreakingMath
+  children:
+  - FreakingMath.LifeControl.AddLife
+  - FreakingMath.LifeControl.IsDie
+  - FreakingMath.LifeControl.RefreshExtraLife
+  - FreakingMath.LifeControl.RemoveLife
+  - FreakingMath.LifeControl.ResetLife
+  - FreakingMath.LifeControl.Start
+  - FreakingMath.LifeControl.StillHasLife
+  - FreakingMath.LifeControl._addLife
+  - FreakingMath.LifeControl.animator
+  - FreakingMath.LifeControl.textExtraLife
+  - FreakingMath.LifeControl.toggles
+  - FreakingMath.LifeControl.totalLife
+  langs:
+  - csharp
+  - vb
+  name: LifeControl
+  nameWithType: LifeControl
+  fullName: FreakingMath.LifeControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: LifeControl
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class LifeControl : MonoBehaviour'
+    content.vb: Public Class LifeControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.LifeControl.toggles
+  commentId: F:FreakingMath.LifeControl.toggles
+  id: toggles
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: toggles
+  nameWithType: LifeControl.toggles
+  fullName: FreakingMath.LifeControl.toggles
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: toggles
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Toggle[] toggles
+    return:
+      type: UnityEngine.UI.Toggle[]
+    content.vb: >-
+      <SerializeField>
+
+      Private toggles As Toggle()
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.LifeControl.totalLife
+  commentId: F:FreakingMath.LifeControl.totalLife
+  id: totalLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: totalLife
+  nameWithType: LifeControl.totalLife
+  fullName: FreakingMath.LifeControl.totalLife
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: totalLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private int totalLife
+    return:
+      type: System.Int32
+    content.vb: >-
+      <SerializeField>
+
+      Private totalLife As Integer
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.LifeControl.textExtraLife
+  commentId: F:FreakingMath.LifeControl.textExtraLife
+  id: textExtraLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: textExtraLife
+  nameWithType: LifeControl.textExtraLife
+  fullName: FreakingMath.LifeControl.textExtraLife
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textExtraLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textExtraLife
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textExtraLife As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.LifeControl.animator
+  commentId: F:FreakingMath.LifeControl.animator
+  id: animator
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: animator
+  nameWithType: LifeControl.animator
+  fullName: FreakingMath.LifeControl.animator
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: animator
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Animator animator
+    return:
+      type: UnityEngine.Animator
+    content.vb: >-
+      <SerializeField>
+
+      Private animator As Animator
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.LifeControl.Start
+  commentId: M:FreakingMath.LifeControl.Start
+  id: Start
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: LifeControl.Start()
+  fullName: FreakingMath.LifeControl.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Start
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: FreakingMath.LifeControl.Start*
+- uid: FreakingMath.LifeControl.RemoveLife
+  commentId: M:FreakingMath.LifeControl.RemoveLife
+  id: RemoveLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: RemoveLife()
+  nameWithType: LifeControl.RemoveLife()
+  fullName: FreakingMath.LifeControl.RemoveLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: RemoveLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void RemoveLife()
+    content.vb: Public Sub RemoveLife()
+  overload: FreakingMath.LifeControl.RemoveLife*
+- uid: FreakingMath.LifeControl.AddLife
+  commentId: M:FreakingMath.LifeControl.AddLife
+  id: AddLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: AddLife()
+  nameWithType: LifeControl.AddLife()
+  fullName: FreakingMath.LifeControl.AddLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: AddLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void AddLife()
+    content.vb: Public Sub AddLife()
+  overload: FreakingMath.LifeControl.AddLife*
+- uid: FreakingMath.LifeControl._addLife
+  commentId: M:FreakingMath.LifeControl._addLife
+  id: _addLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: _addLife()
+  nameWithType: LifeControl._addLife()
+  fullName: FreakingMath.LifeControl._addLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: _addLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private IEnumerator _addLife()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function _addLife() As IEnumerator
+  overload: FreakingMath.LifeControl._addLife*
+- uid: FreakingMath.LifeControl.RefreshExtraLife
+  commentId: M:FreakingMath.LifeControl.RefreshExtraLife
+  id: RefreshExtraLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: RefreshExtraLife()
+  nameWithType: LifeControl.RefreshExtraLife()
+  fullName: FreakingMath.LifeControl.RefreshExtraLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: RefreshExtraLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void RefreshExtraLife()
+    content.vb: Private Sub RefreshExtraLife()
+  overload: FreakingMath.LifeControl.RefreshExtraLife*
+- uid: FreakingMath.LifeControl.StillHasLife
+  commentId: M:FreakingMath.LifeControl.StillHasLife
+  id: StillHasLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: StillHasLife()
+  nameWithType: LifeControl.StillHasLife()
+  fullName: FreakingMath.LifeControl.StillHasLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: StillHasLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public bool StillHasLife()
+    return:
+      type: System.Boolean
+    content.vb: Public Function StillHasLife() As Boolean
+  overload: FreakingMath.LifeControl.StillHasLife*
+- uid: FreakingMath.LifeControl.IsDie
+  commentId: M:FreakingMath.LifeControl.IsDie
+  id: IsDie
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: IsDie()
+  nameWithType: LifeControl.IsDie()
+  fullName: FreakingMath.LifeControl.IsDie()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: IsDie
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public bool IsDie()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsDie() As Boolean
+  overload: FreakingMath.LifeControl.IsDie*
+- uid: FreakingMath.LifeControl.ResetLife
+  commentId: M:FreakingMath.LifeControl.ResetLife
+  id: ResetLife
+  parent: FreakingMath.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: ResetLife()
+  nameWithType: LifeControl.ResetLife()
+  fullName: FreakingMath.LifeControl.ResetLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: ResetLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 122
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void ResetLife()
+    content.vb: Public Sub ResetLife()
+  overload: FreakingMath.LifeControl.ResetLife*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Toggle[]
+  isExternal: true
+  name: Toggle[]
+  nameWithType: Toggle[]
+  fullName: UnityEngine.UI.Toggle[]
+  nameWithType.vb: Toggle()
+  fullName.vb: UnityEngine.UI.Toggle()
+  name.vb: Toggle()
+  spec.csharp:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: FreakingMath.LifeControl.Start*
+  commentId: Overload:FreakingMath.LifeControl.Start
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl_Start
+  name: Start
+  nameWithType: LifeControl.Start
+  fullName: FreakingMath.LifeControl.Start
+- uid: FreakingMath.LifeControl.RemoveLife*
+  commentId: Overload:FreakingMath.LifeControl.RemoveLife
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl_RemoveLife
+  name: RemoveLife
+  nameWithType: LifeControl.RemoveLife
+  fullName: FreakingMath.LifeControl.RemoveLife
+- uid: FreakingMath.LifeControl.AddLife*
+  commentId: Overload:FreakingMath.LifeControl.AddLife
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl_AddLife
+  name: AddLife
+  nameWithType: LifeControl.AddLife
+  fullName: FreakingMath.LifeControl.AddLife
+- uid: FreakingMath.LifeControl._addLife*
+  commentId: Overload:FreakingMath.LifeControl._addLife
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl__addLife
+  name: _addLife
+  nameWithType: LifeControl._addLife
+  fullName: FreakingMath.LifeControl._addLife
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: FreakingMath.LifeControl.RefreshExtraLife*
+  commentId: Overload:FreakingMath.LifeControl.RefreshExtraLife
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl_RefreshExtraLife
+  name: RefreshExtraLife
+  nameWithType: LifeControl.RefreshExtraLife
+  fullName: FreakingMath.LifeControl.RefreshExtraLife
+- uid: FreakingMath.LifeControl.StillHasLife*
+  commentId: Overload:FreakingMath.LifeControl.StillHasLife
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl_StillHasLife
+  name: StillHasLife
+  nameWithType: LifeControl.StillHasLife
+  fullName: FreakingMath.LifeControl.StillHasLife
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: FreakingMath.LifeControl.IsDie*
+  commentId: Overload:FreakingMath.LifeControl.IsDie
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl_IsDie
+  name: IsDie
+  nameWithType: LifeControl.IsDie
+  fullName: FreakingMath.LifeControl.IsDie
+- uid: FreakingMath.LifeControl.ResetLife*
+  commentId: Overload:FreakingMath.LifeControl.ResetLife
+  href: FreakingMath.LifeControl.html#FreakingMath_LifeControl_ResetLife
+  name: ResetLife
+  nameWithType: LifeControl.ResetLife
+  fullName: FreakingMath.LifeControl.ResetLife

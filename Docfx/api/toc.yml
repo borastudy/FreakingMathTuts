@@ -1,0 +1,40 @@
+### YamlMime:TableOfContent
+items:
+- uid: FreakingMath
+  name: FreakingMath
+  type: Namespace
+  items:
+  - uid: FreakingMath.BrainScript
+    name: BrainScript
+    type: Class
+  - uid: FreakingMath.GameControl
+    name: GameControl
+    type: Class
+  - uid: FreakingMath.GameDataManager
+    name: GameDataManager
+    type: Class
+  - uid: FreakingMath.GameOverControl
+    name: GameOverControl
+    type: Class
+  - uid: FreakingMath.Hand
+    name: Hand
+    type: Class
+  - uid: FreakingMath.HintControl
+    name: HintControl
+    type: Class
+  - uid: FreakingMath.HomeControl
+    name: HomeControl
+    type: Class
+  - uid: FreakingMath.LifeControl
+    name: LifeControl
+    type: Class
+  - uid: FreakingMath.MathOperator
+    name: MathOperator
+    type: Enum
+  - uid: FreakingMath.SplashControl
+    name: SplashControl
+    type: Class
+  - uid: FreakingMath.TimerBarControl
+    name: TimerBarControl
+    type: Class
+memberLayout: SamePage

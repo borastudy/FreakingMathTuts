@@ -1,0 +1,528 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.TimerBarControl
+  commentId: T:FreakingMath.TimerBarControl
+  id: TimerBarControl
+  parent: FreakingMath
+  children:
+  - FreakingMath.TimerBarControl.Pause
+  - FreakingMath.TimerBarControl.RemoveLifeAndResetTimer
+  - FreakingMath.TimerBarControl.Reset
+  - FreakingMath.TimerBarControl.Start
+  - FreakingMath.TimerBarControl.Update
+  - FreakingMath.TimerBarControl.durationPerQuestion
+  - FreakingMath.TimerBarControl.gameControl
+  - FreakingMath.TimerBarControl.imageTimerBar
+  - FreakingMath.TimerBarControl.isTimeOut
+  - FreakingMath.TimerBarControl.lifeControl
+  - FreakingMath.TimerBarControl.timeCounter
+  langs:
+  - csharp
+  - vb
+  name: TimerBarControl
+  nameWithType: TimerBarControl
+  fullName: FreakingMath.TimerBarControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: TimerBarControl
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class TimerBarControl : MonoBehaviour'
+    content.vb: Public Class TimerBarControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.TimerBarControl.durationPerQuestion
+  commentId: F:FreakingMath.TimerBarControl.durationPerQuestion
+  id: durationPerQuestion
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: durationPerQuestion
+  nameWithType: TimerBarControl.durationPerQuestion
+  fullName: FreakingMath.TimerBarControl.durationPerQuestion
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: durationPerQuestion
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private float durationPerQuestion
+    return:
+      type: System.Single
+    content.vb: >-
+      <SerializeField>
+
+      Private durationPerQuestion As Single
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.TimerBarControl.imageTimerBar
+  commentId: F:FreakingMath.TimerBarControl.imageTimerBar
+  id: imageTimerBar
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: imageTimerBar
+  nameWithType: TimerBarControl.imageTimerBar
+  fullName: FreakingMath.TimerBarControl.imageTimerBar
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: imageTimerBar
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image imageTimerBar
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private imageTimerBar As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.TimerBarControl.lifeControl
+  commentId: F:FreakingMath.TimerBarControl.lifeControl
+  id: lifeControl
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: lifeControl
+  nameWithType: TimerBarControl.lifeControl
+  fullName: FreakingMath.TimerBarControl.lifeControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: lifeControl
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private LifeControl lifeControl
+    return:
+      type: FreakingMath.LifeControl
+    content.vb: >-
+      <SerializeField>
+
+      Private lifeControl As LifeControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.TimerBarControl.gameControl
+  commentId: F:FreakingMath.TimerBarControl.gameControl
+  id: gameControl
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: gameControl
+  nameWithType: TimerBarControl.gameControl
+  fullName: FreakingMath.TimerBarControl.gameControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: gameControl
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private GameControl gameControl
+    return:
+      type: FreakingMath.GameControl
+    content.vb: >-
+      <SerializeField>
+
+      Private gameControl As GameControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.TimerBarControl.isTimeOut
+  commentId: F:FreakingMath.TimerBarControl.isTimeOut
+  id: isTimeOut
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: isTimeOut
+  nameWithType: TimerBarControl.isTimeOut
+  fullName: FreakingMath.TimerBarControl.isTimeOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: isTimeOut
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private bool isTimeOut
+    return:
+      type: System.Boolean
+    content.vb: Private isTimeOut As Boolean
+- uid: FreakingMath.TimerBarControl.timeCounter
+  commentId: F:FreakingMath.TimerBarControl.timeCounter
+  id: timeCounter
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: timeCounter
+  nameWithType: TimerBarControl.timeCounter
+  fullName: FreakingMath.TimerBarControl.timeCounter
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: timeCounter
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private float timeCounter
+    return:
+      type: System.Single
+    content.vb: Private timeCounter As Single
+- uid: FreakingMath.TimerBarControl.Start
+  commentId: M:FreakingMath.TimerBarControl.Start
+  id: Start
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: TimerBarControl.Start()
+  fullName: FreakingMath.TimerBarControl.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Start
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: FreakingMath.TimerBarControl.Start*
+- uid: FreakingMath.TimerBarControl.Update
+  commentId: M:FreakingMath.TimerBarControl.Update
+  id: Update
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: TimerBarControl.Update()
+  fullName: FreakingMath.TimerBarControl.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Update
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void Update()
+    content.vb: Private Sub Update()
+  overload: FreakingMath.TimerBarControl.Update*
+- uid: FreakingMath.TimerBarControl.Reset
+  commentId: M:FreakingMath.TimerBarControl.Reset
+  id: Reset
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: TimerBarControl.Reset()
+  fullName: FreakingMath.TimerBarControl.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Reset
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: FreakingMath.TimerBarControl.Reset*
+- uid: FreakingMath.TimerBarControl.Pause
+  commentId: M:FreakingMath.TimerBarControl.Pause
+  id: Pause
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: TimerBarControl.Pause()
+  fullName: FreakingMath.TimerBarControl.Pause()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Pause
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: FreakingMath.TimerBarControl.Pause*
+- uid: FreakingMath.TimerBarControl.RemoveLifeAndResetTimer
+  commentId: M:FreakingMath.TimerBarControl.RemoveLifeAndResetTimer
+  id: RemoveLifeAndResetTimer
+  parent: FreakingMath.TimerBarControl
+  langs:
+  - csharp
+  - vb
+  name: RemoveLifeAndResetTimer()
+  nameWithType: TimerBarControl.RemoveLifeAndResetTimer()
+  fullName: FreakingMath.TimerBarControl.RemoveLifeAndResetTimer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/TimerBarControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: RemoveLifeAndResetTimer
+    path: ../Assets/Scripts/TimerBarControl.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void RemoveLifeAndResetTimer()
+    content.vb: Private Sub RemoveLifeAndResetTimer()
+  overload: FreakingMath.TimerBarControl.RemoveLifeAndResetTimer*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: FreakingMath.LifeControl
+  commentId: T:FreakingMath.LifeControl
+  parent: FreakingMath
+  href: FreakingMath.LifeControl.html
+  name: LifeControl
+  nameWithType: LifeControl
+  fullName: FreakingMath.LifeControl
+- uid: FreakingMath.GameControl
+  commentId: T:FreakingMath.GameControl
+  parent: FreakingMath
+  href: FreakingMath.GameControl.html
+  name: GameControl
+  nameWithType: GameControl
+  fullName: FreakingMath.GameControl
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: FreakingMath.TimerBarControl.Start*
+  commentId: Overload:FreakingMath.TimerBarControl.Start
+  href: FreakingMath.TimerBarControl.html#FreakingMath_TimerBarControl_Start
+  name: Start
+  nameWithType: TimerBarControl.Start
+  fullName: FreakingMath.TimerBarControl.Start
+- uid: FreakingMath.TimerBarControl.Update*
+  commentId: Overload:FreakingMath.TimerBarControl.Update
+  href: FreakingMath.TimerBarControl.html#FreakingMath_TimerBarControl_Update
+  name: Update
+  nameWithType: TimerBarControl.Update
+  fullName: FreakingMath.TimerBarControl.Update
+- uid: FreakingMath.TimerBarControl.Reset*
+  commentId: Overload:FreakingMath.TimerBarControl.Reset
+  href: FreakingMath.TimerBarControl.html#FreakingMath_TimerBarControl_Reset
+  name: Reset
+  nameWithType: TimerBarControl.Reset
+  fullName: FreakingMath.TimerBarControl.Reset
+- uid: FreakingMath.TimerBarControl.Pause*
+  commentId: Overload:FreakingMath.TimerBarControl.Pause
+  href: FreakingMath.TimerBarControl.html#FreakingMath_TimerBarControl_Pause
+  name: Pause
+  nameWithType: TimerBarControl.Pause
+  fullName: FreakingMath.TimerBarControl.Pause
+- uid: FreakingMath.TimerBarControl.RemoveLifeAndResetTimer*
+  commentId: Overload:FreakingMath.TimerBarControl.RemoveLifeAndResetTimer
+  href: FreakingMath.TimerBarControl.html#FreakingMath_TimerBarControl_RemoveLifeAndResetTimer
+  name: RemoveLifeAndResetTimer
+  nameWithType: TimerBarControl.RemoveLifeAndResetTimer
+  fullName: FreakingMath.TimerBarControl.RemoveLifeAndResetTimer

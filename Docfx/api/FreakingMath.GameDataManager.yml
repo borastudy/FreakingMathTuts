@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.GameDataManager
+  commentId: T:FreakingMath.GameDataManager
+  id: GameDataManager
+  parent: FreakingMath
+  children:
+  - FreakingMath.GameDataManager.Awake
+  - FreakingMath.GameDataManager.HighScore
+  - FreakingMath.GameDataManager.OnDestroy
+  - FreakingMath.GameDataManager.Start
+  - FreakingMath.GameDataManager.dataManager
+  langs:
+  - csharp
+  - vb
+  name: GameDataManager
+  nameWithType: GameDataManager
+  fullName: FreakingMath.GameDataManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/GameDataManager.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GameDataManager
+    path: ../Assets/Scripts/GameDataManager.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class GameDataManager : MonoBehaviour'
+    content.vb: Public Class GameDataManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.GameDataManager.HighScore
+  commentId: P:FreakingMath.GameDataManager.HighScore
+  id: HighScore
+  parent: FreakingMath.GameDataManager
+  langs:
+  - csharp
+  - vb
+  name: HighScore
+  nameWithType: GameDataManager.HighScore
+  fullName: FreakingMath.GameDataManager.HighScore
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/GameDataManager.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: HighScore
+    path: ../Assets/Scripts/GameDataManager.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public int HighScore { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HighScore As Integer
+  overload: FreakingMath.GameDataManager.HighScore*
+- uid: FreakingMath.GameDataManager.dataManager
+  commentId: F:FreakingMath.GameDataManager.dataManager
+  id: dataManager
+  parent: FreakingMath.GameDataManager
+  langs:
+  - csharp
+  - vb
+  name: dataManager
+  nameWithType: GameDataManager.dataManager
+  fullName: FreakingMath.GameDataManager.dataManager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameDataManager.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: dataManager
+    path: ../Assets/Scripts/GameDataManager.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public static GameDataManager dataManager
+    return:
+      type: FreakingMath.GameDataManager
+    content.vb: Public Shared dataManager As GameDataManager
+- uid: FreakingMath.GameDataManager.Awake
+  commentId: M:FreakingMath.GameDataManager.Awake
+  id: Awake
+  parent: FreakingMath.GameDataManager
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: GameDataManager.Awake()
+  fullName: FreakingMath.GameDataManager.Awake()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameDataManager.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Awake
+    path: ../Assets/Scripts/GameDataManager.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void Awake()
+    content.vb: Private Sub Awake()
+  overload: FreakingMath.GameDataManager.Awake*
+- uid: FreakingMath.GameDataManager.Start
+  commentId: M:FreakingMath.GameDataManager.Start
+  id: Start
+  parent: FreakingMath.GameDataManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: GameDataManager.Start()
+  fullName: FreakingMath.GameDataManager.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameDataManager.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Start
+    path: ../Assets/Scripts/GameDataManager.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: FreakingMath.GameDataManager.Start*
+- uid: FreakingMath.GameDataManager.OnDestroy
+  commentId: M:FreakingMath.GameDataManager.OnDestroy
+  id: OnDestroy
+  parent: FreakingMath.GameDataManager
+  langs:
+  - csharp
+  - vb
+  name: OnDestroy()
+  nameWithType: GameDataManager.OnDestroy()
+  fullName: FreakingMath.GameDataManager.OnDestroy()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameDataManager.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: OnDestroy
+    path: ../Assets/Scripts/GameDataManager.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void OnDestroy()
+    content.vb: Private Sub OnDestroy()
+  overload: FreakingMath.GameDataManager.OnDestroy*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: FreakingMath.GameDataManager.HighScore*
+  commentId: Overload:FreakingMath.GameDataManager.HighScore
+  href: FreakingMath.GameDataManager.html#FreakingMath_GameDataManager_HighScore
+  name: HighScore
+  nameWithType: GameDataManager.HighScore
+  fullName: FreakingMath.GameDataManager.HighScore
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: FreakingMath.GameDataManager
+  commentId: T:FreakingMath.GameDataManager
+  parent: FreakingMath
+  href: FreakingMath.GameDataManager.html
+  name: GameDataManager
+  nameWithType: GameDataManager
+  fullName: FreakingMath.GameDataManager
+- uid: FreakingMath.GameDataManager.Awake*
+  commentId: Overload:FreakingMath.GameDataManager.Awake
+  href: FreakingMath.GameDataManager.html#FreakingMath_GameDataManager_Awake
+  name: Awake
+  nameWithType: GameDataManager.Awake
+  fullName: FreakingMath.GameDataManager.Awake
+- uid: FreakingMath.GameDataManager.Start*
+  commentId: Overload:FreakingMath.GameDataManager.Start
+  href: FreakingMath.GameDataManager.html#FreakingMath_GameDataManager_Start
+  name: Start
+  nameWithType: GameDataManager.Start
+  fullName: FreakingMath.GameDataManager.Start
+- uid: FreakingMath.GameDataManager.OnDestroy*
+  commentId: Overload:FreakingMath.GameDataManager.OnDestroy
+  href: FreakingMath.GameDataManager.html#FreakingMath_GameDataManager_OnDestroy
+  name: OnDestroy
+  nameWithType: GameDataManager.OnDestroy
+  fullName: FreakingMath.GameDataManager.OnDestroy

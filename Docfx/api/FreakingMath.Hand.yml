@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.Hand
+  commentId: T:FreakingMath.Hand
+  id: Hand
+  parent: FreakingMath
+  children:
+  - FreakingMath.Hand.OnAnimationCompleted
+  langs:
+  - csharp
+  - vb
+  name: Hand
+  nameWithType: Hand
+  fullName: FreakingMath.Hand
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Hand.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Hand
+    path: ../Assets/Scripts/Hand.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class Hand : MonoBehaviour'
+    content.vb: Public Class Hand Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.Hand.OnAnimationCompleted
+  commentId: M:FreakingMath.Hand.OnAnimationCompleted
+  id: OnAnimationCompleted
+  parent: FreakingMath.Hand
+  langs:
+  - csharp
+  - vb
+  name: OnAnimationCompleted()
+  nameWithType: Hand.OnAnimationCompleted()
+  fullName: FreakingMath.Hand.OnAnimationCompleted()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Hand.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: OnAnimationCompleted
+    path: ../Assets/Scripts/Hand.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void OnAnimationCompleted()
+    content.vb: Public Sub OnAnimationCompleted()
+  overload: FreakingMath.Hand.OnAnimationCompleted*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: FreakingMath.Hand.OnAnimationCompleted*
+  commentId: Overload:FreakingMath.Hand.OnAnimationCompleted
+  href: FreakingMath.Hand.html#FreakingMath_Hand_OnAnimationCompleted
+  name: OnAnimationCompleted
+  nameWithType: Hand.OnAnimationCompleted
+  fullName: FreakingMath.Hand.OnAnimationCompleted

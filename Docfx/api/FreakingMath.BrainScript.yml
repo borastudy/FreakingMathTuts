@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.BrainScript
+  commentId: T:FreakingMath.BrainScript
+  id: BrainScript
+  parent: FreakingMath
+  children:
+  - FreakingMath.BrainScript.GenerateFakeResults
+  - FreakingMath.BrainScript.GenerateQuiz
+  - FreakingMath.BrainScript.GetCorrectResult
+  - FreakingMath.BrainScript.GetCorrectResultIndex
+  - FreakingMath.BrainScript.GetQuestion
+  - FreakingMath.BrainScript.GetResults
+  - FreakingMath.BrainScript.Shuffle(System.Int32[])
+  - FreakingMath.BrainScript.correctResult
+  - FreakingMath.BrainScript.mathOperator
+  - FreakingMath.BrainScript.operandA
+  - FreakingMath.BrainScript.operandB
+  - FreakingMath.BrainScript.question
+  - FreakingMath.BrainScript.results
+  langs:
+  - csharp
+  - vb
+  name: BrainScript
+  nameWithType: BrainScript
+  fullName: FreakingMath.BrainScript
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: BrainScript
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class BrainScript : MonoBehaviour'
+    content.vb: Public Class BrainScript Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.BrainScript.operandA
+  commentId: F:FreakingMath.BrainScript.operandA
+  id: operandA
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: operandA
+  nameWithType: BrainScript.operandA
+  fullName: FreakingMath.BrainScript.operandA
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: operandA
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private int operandA
+    return:
+      type: System.Int32
+    content.vb: Private operandA As Integer
+- uid: FreakingMath.BrainScript.operandB
+  commentId: F:FreakingMath.BrainScript.operandB
+  id: operandB
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: operandB
+  nameWithType: BrainScript.operandB
+  fullName: FreakingMath.BrainScript.operandB
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: operandB
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private int operandB
+    return:
+      type: System.Int32
+    content.vb: Private operandB As Integer
+- uid: FreakingMath.BrainScript.correctResult
+  commentId: F:FreakingMath.BrainScript.correctResult
+  id: correctResult
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: correctResult
+  nameWithType: BrainScript.correctResult
+  fullName: FreakingMath.BrainScript.correctResult
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: correctResult
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private int correctResult
+    return:
+      type: System.Int32
+    content.vb: Private correctResult As Integer
+- uid: FreakingMath.BrainScript.results
+  commentId: F:FreakingMath.BrainScript.results
+  id: results
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: results
+  nameWithType: BrainScript.results
+  fullName: FreakingMath.BrainScript.results
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: results
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private int[] results
+    return:
+      type: System.Int32[]
+    content.vb: Private results As Integer()
+- uid: FreakingMath.BrainScript.question
+  commentId: F:FreakingMath.BrainScript.question
+  id: question
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: question
+  nameWithType: BrainScript.question
+  fullName: FreakingMath.BrainScript.question
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: question
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private string question
+    return:
+      type: System.String
+    content.vb: Private question As String
+- uid: FreakingMath.BrainScript.mathOperator
+  commentId: F:FreakingMath.BrainScript.mathOperator
+  id: mathOperator
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: mathOperator
+  nameWithType: BrainScript.mathOperator
+  fullName: FreakingMath.BrainScript.mathOperator
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: mathOperator
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private MathOperator mathOperator
+    return:
+      type: FreakingMath.MathOperator
+    content.vb: Private mathOperator As MathOperator
+- uid: FreakingMath.BrainScript.GenerateQuiz
+  commentId: M:FreakingMath.BrainScript.GenerateQuiz
+  id: GenerateQuiz
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: GenerateQuiz()
+  nameWithType: BrainScript.GenerateQuiz()
+  fullName: FreakingMath.BrainScript.GenerateQuiz()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GenerateQuiz
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void GenerateQuiz()
+    content.vb: Public Sub GenerateQuiz()
+  overload: FreakingMath.BrainScript.GenerateQuiz*
+- uid: FreakingMath.BrainScript.GenerateFakeResults
+  commentId: M:FreakingMath.BrainScript.GenerateFakeResults
+  id: GenerateFakeResults
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: GenerateFakeResults()
+  nameWithType: BrainScript.GenerateFakeResults()
+  fullName: FreakingMath.BrainScript.GenerateFakeResults()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GenerateFakeResults
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void GenerateFakeResults()
+    content.vb: Private Sub GenerateFakeResults()
+  overload: FreakingMath.BrainScript.GenerateFakeResults*
+- uid: FreakingMath.BrainScript.GetQuestion
+  commentId: M:FreakingMath.BrainScript.GetQuestion
+  id: GetQuestion
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: GetQuestion()
+  nameWithType: BrainScript.GetQuestion()
+  fullName: FreakingMath.BrainScript.GetQuestion()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GetQuestion
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public string GetQuestion()
+    return:
+      type: System.String
+    content.vb: Public Function GetQuestion() As String
+  overload: FreakingMath.BrainScript.GetQuestion*
+- uid: FreakingMath.BrainScript.GetResults
+  commentId: M:FreakingMath.BrainScript.GetResults
+  id: GetResults
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: GetResults()
+  nameWithType: BrainScript.GetResults()
+  fullName: FreakingMath.BrainScript.GetResults()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GetResults
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public int[] GetResults()
+    return:
+      type: System.Int32[]
+    content.vb: Public Function GetResults() As Integer()
+  overload: FreakingMath.BrainScript.GetResults*
+- uid: FreakingMath.BrainScript.GetCorrectResult
+  commentId: M:FreakingMath.BrainScript.GetCorrectResult
+  id: GetCorrectResult
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: GetCorrectResult()
+  nameWithType: BrainScript.GetCorrectResult()
+  fullName: FreakingMath.BrainScript.GetCorrectResult()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GetCorrectResult
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public int GetCorrectResult()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetCorrectResult() As Integer
+  overload: FreakingMath.BrainScript.GetCorrectResult*
+- uid: FreakingMath.BrainScript.GetCorrectResultIndex
+  commentId: M:FreakingMath.BrainScript.GetCorrectResultIndex
+  id: GetCorrectResultIndex
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: GetCorrectResultIndex()
+  nameWithType: BrainScript.GetCorrectResultIndex()
+  fullName: FreakingMath.BrainScript.GetCorrectResultIndex()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GetCorrectResultIndex
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public int GetCorrectResultIndex()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetCorrectResultIndex() As Integer
+  overload: FreakingMath.BrainScript.GetCorrectResultIndex*
+- uid: FreakingMath.BrainScript.Shuffle(System.Int32[])
+  commentId: M:FreakingMath.BrainScript.Shuffle(System.Int32[])
+  id: Shuffle(System.Int32[])
+  parent: FreakingMath.BrainScript
+  langs:
+  - csharp
+  - vb
+  name: Shuffle(int[])
+  nameWithType: BrainScript.Shuffle(int[])
+  fullName: FreakingMath.BrainScript.Shuffle(int[])
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Shuffle
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 104
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void Shuffle(int[] arr)
+    parameters:
+    - id: arr
+      type: System.Int32[]
+    content.vb: Public Sub Shuffle(arr As Integer())
+  overload: FreakingMath.BrainScript.Shuffle*
+  nameWithType.vb: BrainScript.Shuffle(Integer())
+  fullName.vb: FreakingMath.BrainScript.Shuffle(Integer())
+  name.vb: Shuffle(Integer())
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int32[]
+  isExternal: true
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: FreakingMath.MathOperator
+  commentId: T:FreakingMath.MathOperator
+  parent: FreakingMath
+  href: FreakingMath.MathOperator.html
+  name: MathOperator
+  nameWithType: MathOperator
+  fullName: FreakingMath.MathOperator
+- uid: FreakingMath.BrainScript.GenerateQuiz*
+  commentId: Overload:FreakingMath.BrainScript.GenerateQuiz
+  href: FreakingMath.BrainScript.html#FreakingMath_BrainScript_GenerateQuiz
+  name: GenerateQuiz
+  nameWithType: BrainScript.GenerateQuiz
+  fullName: FreakingMath.BrainScript.GenerateQuiz
+- uid: FreakingMath.BrainScript.GenerateFakeResults*
+  commentId: Overload:FreakingMath.BrainScript.GenerateFakeResults
+  href: FreakingMath.BrainScript.html#FreakingMath_BrainScript_GenerateFakeResults
+  name: GenerateFakeResults
+  nameWithType: BrainScript.GenerateFakeResults
+  fullName: FreakingMath.BrainScript.GenerateFakeResults
+- uid: FreakingMath.BrainScript.GetQuestion*
+  commentId: Overload:FreakingMath.BrainScript.GetQuestion
+  href: FreakingMath.BrainScript.html#FreakingMath_BrainScript_GetQuestion
+  name: GetQuestion
+  nameWithType: BrainScript.GetQuestion
+  fullName: FreakingMath.BrainScript.GetQuestion
+- uid: FreakingMath.BrainScript.GetResults*
+  commentId: Overload:FreakingMath.BrainScript.GetResults
+  href: FreakingMath.BrainScript.html#FreakingMath_BrainScript_GetResults
+  name: GetResults
+  nameWithType: BrainScript.GetResults
+  fullName: FreakingMath.BrainScript.GetResults
+- uid: FreakingMath.BrainScript.GetCorrectResult*
+  commentId: Overload:FreakingMath.BrainScript.GetCorrectResult
+  href: FreakingMath.BrainScript.html#FreakingMath_BrainScript_GetCorrectResult
+  name: GetCorrectResult
+  nameWithType: BrainScript.GetCorrectResult
+  fullName: FreakingMath.BrainScript.GetCorrectResult
+- uid: FreakingMath.BrainScript.GetCorrectResultIndex*
+  commentId: Overload:FreakingMath.BrainScript.GetCorrectResultIndex
+  href: FreakingMath.BrainScript.html#FreakingMath_BrainScript_GetCorrectResultIndex
+  name: GetCorrectResultIndex
+  nameWithType: BrainScript.GetCorrectResultIndex
+  fullName: FreakingMath.BrainScript.GetCorrectResultIndex
+- uid: FreakingMath.BrainScript.Shuffle*
+  commentId: Overload:FreakingMath.BrainScript.Shuffle
+  href: FreakingMath.BrainScript.html#FreakingMath_BrainScript_Shuffle_System_Int32___
+  name: Shuffle
+  nameWithType: BrainScript.Shuffle
+  fullName: FreakingMath.BrainScript.Shuffle

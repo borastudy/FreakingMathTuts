@@ -1,20 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class SplashControl : MonoBehaviour
+namespace FreakingMath
 {
-    [SerializeField] float delayBeforeHome = 0.5f;
-    
-    void Start()
+    public class SplashControl : MonoBehaviour
     {
-        StartCoroutine(WaitingAndLoad());
-    }
+        [SerializeField] float delayBeforeHome = 0.5f;
+
+        void Start()
+        {
+            StartCoroutine(WaitingAndLoad());
+        }
 
 
-    IEnumerator WaitingAndLoad ()
-    {
-        yield return new WaitForSeconds(delayBeforeHome);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("HomeScene");
+        IEnumerator WaitingAndLoad()
+        {
+            yield return new WaitForSeconds(delayBeforeHome);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("HomeScene");
+        }
     }
 }

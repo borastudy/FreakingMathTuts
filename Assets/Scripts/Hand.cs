@@ -1,10 +1,14 @@
 
 using UnityEngine;
 
-public class Hand : MonoBehaviour
+
+namespace FreakingMath
 {
-    public void OnAnimationCompleted()
+    public class Hand : MonoBehaviour
     {
-        gameObject.SetActive(false);
+        public void OnAnimationCompleted()
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

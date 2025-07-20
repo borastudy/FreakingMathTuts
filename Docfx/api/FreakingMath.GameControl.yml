@@ -1,0 +1,965 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.GameControl
+  commentId: T:FreakingMath.GameControl
+  id: GameControl
+  parent: FreakingMath
+  children:
+  - FreakingMath.GameControl.GenerateQuestion
+  - FreakingMath.GameControl.GiveAnswer
+  - FreakingMath.GameControl.HandleClick(System.Int32)
+  - FreakingMath.GameControl.ResetBonusLife
+  - FreakingMath.GameControl.ShowGameOver
+  - FreakingMath.GameControl.Start
+  - FreakingMath.GameControl.brainScript
+  - FreakingMath.GameControl.correctResult
+  - FreakingMath.GameControl.countCorrect
+  - FreakingMath.GameControl.gameDataManager
+  - FreakingMath.GameControl.gameOverControl
+  - FreakingMath.GameControl.hands
+  - FreakingMath.GameControl.imageBonusLife
+  - FreakingMath.GameControl.lifeControl
+  - FreakingMath.GameControl.score
+  - FreakingMath.GameControl.textAnswer1
+  - FreakingMath.GameControl.textAnswer2
+  - FreakingMath.GameControl.textAnswer3
+  - FreakingMath.GameControl.textAnswer4
+  - FreakingMath.GameControl.textQuestion
+  - FreakingMath.GameControl.textScore
+  - FreakingMath.GameControl.timerBarControl
+  langs:
+  - csharp
+  - vb
+  name: GameControl
+  nameWithType: GameControl
+  fullName: FreakingMath.GameControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GameControl
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class GameControl : MonoBehaviour'
+    content.vb: Public Class GameControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.GameControl.hands
+  commentId: F:FreakingMath.GameControl.hands
+  id: hands
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: hands
+  nameWithType: GameControl.hands
+  fullName: FreakingMath.GameControl.hands
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: hands
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private GameObject[] hands
+    return:
+      type: UnityEngine.GameObject[]
+    content.vb: >-
+      <SerializeField>
+
+      Private hands As GameObject()
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.textScore
+  commentId: F:FreakingMath.GameControl.textScore
+  id: textScore
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: textScore
+  nameWithType: GameControl.textScore
+  fullName: FreakingMath.GameControl.textScore
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textScore
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textScore
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textScore As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.textQuestion
+  commentId: F:FreakingMath.GameControl.textQuestion
+  id: textQuestion
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: textQuestion
+  nameWithType: GameControl.textQuestion
+  fullName: FreakingMath.GameControl.textQuestion
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textQuestion
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textQuestion
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textQuestion As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.brainScript
+  commentId: F:FreakingMath.GameControl.brainScript
+  id: brainScript
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: brainScript
+  nameWithType: GameControl.brainScript
+  fullName: FreakingMath.GameControl.brainScript
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: brainScript
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private BrainScript brainScript
+    return:
+      type: FreakingMath.BrainScript
+    content.vb: >-
+      <SerializeField>
+
+      Private brainScript As BrainScript
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.lifeControl
+  commentId: F:FreakingMath.GameControl.lifeControl
+  id: lifeControl
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: lifeControl
+  nameWithType: GameControl.lifeControl
+  fullName: FreakingMath.GameControl.lifeControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: lifeControl
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private LifeControl lifeControl
+    return:
+      type: FreakingMath.LifeControl
+    content.vb: >-
+      <SerializeField>
+
+      Private lifeControl As LifeControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.textAnswer1
+  commentId: F:FreakingMath.GameControl.textAnswer1
+  id: textAnswer1
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: textAnswer1
+  nameWithType: GameControl.textAnswer1
+  fullName: FreakingMath.GameControl.textAnswer1
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textAnswer1
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textAnswer1
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textAnswer1 As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.textAnswer2
+  commentId: F:FreakingMath.GameControl.textAnswer2
+  id: textAnswer2
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: textAnswer2
+  nameWithType: GameControl.textAnswer2
+  fullName: FreakingMath.GameControl.textAnswer2
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textAnswer2
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textAnswer2
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textAnswer2 As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.textAnswer3
+  commentId: F:FreakingMath.GameControl.textAnswer3
+  id: textAnswer3
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: textAnswer3
+  nameWithType: GameControl.textAnswer3
+  fullName: FreakingMath.GameControl.textAnswer3
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textAnswer3
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textAnswer3
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textAnswer3 As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.textAnswer4
+  commentId: F:FreakingMath.GameControl.textAnswer4
+  id: textAnswer4
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: textAnswer4
+  nameWithType: GameControl.textAnswer4
+  fullName: FreakingMath.GameControl.textAnswer4
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textAnswer4
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textAnswer4
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textAnswer4 As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.gameOverControl
+  commentId: F:FreakingMath.GameControl.gameOverControl
+  id: gameOverControl
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: gameOverControl
+  nameWithType: GameControl.gameOverControl
+  fullName: FreakingMath.GameControl.gameOverControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: gameOverControl
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private GameOverControl gameOverControl
+    return:
+      type: FreakingMath.GameOverControl
+    content.vb: >-
+      <SerializeField>
+
+      Private gameOverControl As GameOverControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.timerBarControl
+  commentId: F:FreakingMath.GameControl.timerBarControl
+  id: timerBarControl
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: timerBarControl
+  nameWithType: GameControl.timerBarControl
+  fullName: FreakingMath.GameControl.timerBarControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: timerBarControl
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private TimerBarControl timerBarControl
+    return:
+      type: FreakingMath.TimerBarControl
+    content.vb: >-
+      <SerializeField>
+
+      Private timerBarControl As TimerBarControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.imageBonusLife
+  commentId: F:FreakingMath.GameControl.imageBonusLife
+  id: imageBonusLife
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: imageBonusLife
+  nameWithType: GameControl.imageBonusLife
+  fullName: FreakingMath.GameControl.imageBonusLife
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: imageBonusLife
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image imageBonusLife
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private imageBonusLife As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameControl.gameDataManager
+  commentId: F:FreakingMath.GameControl.gameDataManager
+  id: gameDataManager
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: gameDataManager
+  nameWithType: GameControl.gameDataManager
+  fullName: FreakingMath.GameControl.gameDataManager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: gameDataManager
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private GameDataManager gameDataManager
+    return:
+      type: FreakingMath.GameDataManager
+    content.vb: Private gameDataManager As GameDataManager
+- uid: FreakingMath.GameControl.correctResult
+  commentId: F:FreakingMath.GameControl.correctResult
+  id: correctResult
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: correctResult
+  nameWithType: GameControl.correctResult
+  fullName: FreakingMath.GameControl.correctResult
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: correctResult
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private int correctResult
+    return:
+      type: System.Int32
+    content.vb: Private correctResult As Integer
+- uid: FreakingMath.GameControl.score
+  commentId: F:FreakingMath.GameControl.score
+  id: score
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: score
+  nameWithType: GameControl.score
+  fullName: FreakingMath.GameControl.score
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: score
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private int score
+    return:
+      type: System.Int32
+    content.vb: Private score As Integer
+- uid: FreakingMath.GameControl.countCorrect
+  commentId: F:FreakingMath.GameControl.countCorrect
+  id: countCorrect
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: countCorrect
+  nameWithType: GameControl.countCorrect
+  fullName: FreakingMath.GameControl.countCorrect
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: countCorrect
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private int countCorrect
+    return:
+      type: System.Int32
+    content.vb: Private countCorrect As Integer
+- uid: FreakingMath.GameControl.Start
+  commentId: M:FreakingMath.GameControl.Start
+  id: Start
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: GameControl.Start()
+  fullName: FreakingMath.GameControl.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Start
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: FreakingMath.GameControl.Start*
+- uid: FreakingMath.GameControl.GenerateQuestion
+  commentId: M:FreakingMath.GameControl.GenerateQuestion
+  id: GenerateQuestion
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: GenerateQuestion()
+  nameWithType: GameControl.GenerateQuestion()
+  fullName: FreakingMath.GameControl.GenerateQuestion()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GenerateQuestion
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void GenerateQuestion()
+    content.vb: Private Sub GenerateQuestion()
+  overload: FreakingMath.GameControl.GenerateQuestion*
+- uid: FreakingMath.GameControl.GiveAnswer
+  commentId: M:FreakingMath.GameControl.GiveAnswer
+  id: GiveAnswer
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: GiveAnswer()
+  nameWithType: GameControl.GiveAnswer()
+  fullName: FreakingMath.GameControl.GiveAnswer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GiveAnswer
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void GiveAnswer()
+    content.vb: Public Sub GiveAnswer()
+  overload: FreakingMath.GameControl.GiveAnswer*
+- uid: FreakingMath.GameControl.HandleClick(System.Int32)
+  commentId: M:FreakingMath.GameControl.HandleClick(System.Int32)
+  id: HandleClick(System.Int32)
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: HandleClick(int)
+  nameWithType: GameControl.HandleClick(int)
+  fullName: FreakingMath.GameControl.HandleClick(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: HandleClick
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void HandleClick(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub HandleClick(index As Integer)
+  overload: FreakingMath.GameControl.HandleClick*
+  nameWithType.vb: GameControl.HandleClick(Integer)
+  fullName.vb: FreakingMath.GameControl.HandleClick(Integer)
+  name.vb: HandleClick(Integer)
+- uid: FreakingMath.GameControl.ResetBonusLife
+  commentId: M:FreakingMath.GameControl.ResetBonusLife
+  id: ResetBonusLife
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: ResetBonusLife()
+  nameWithType: GameControl.ResetBonusLife()
+  fullName: FreakingMath.GameControl.ResetBonusLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: ResetBonusLife
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void ResetBonusLife()
+    content.vb: Public Sub ResetBonusLife()
+  overload: FreakingMath.GameControl.ResetBonusLife*
+- uid: FreakingMath.GameControl.ShowGameOver
+  commentId: M:FreakingMath.GameControl.ShowGameOver
+  id: ShowGameOver
+  parent: FreakingMath.GameControl
+  langs:
+  - csharp
+  - vb
+  name: ShowGameOver()
+  nameWithType: GameControl.ShowGameOver()
+  fullName: FreakingMath.GameControl.ShowGameOver()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: ShowGameOver
+    path: ../Assets/Scripts/GameControl.cs
+    startLine: 118
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void ShowGameOver()
+    content.vb: Public Sub ShowGameOver()
+  overload: FreakingMath.GameControl.ShowGameOver*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.GameObject[]
+  isExternal: true
+  name: GameObject[]
+  nameWithType: GameObject[]
+  fullName: UnityEngine.GameObject[]
+  nameWithType.vb: GameObject()
+  fullName.vb: UnityEngine.GameObject()
+  name.vb: GameObject()
+  spec.csharp:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: FreakingMath.BrainScript
+  commentId: T:FreakingMath.BrainScript
+  parent: FreakingMath
+  href: FreakingMath.BrainScript.html
+  name: BrainScript
+  nameWithType: BrainScript
+  fullName: FreakingMath.BrainScript
+- uid: FreakingMath.LifeControl
+  commentId: T:FreakingMath.LifeControl
+  parent: FreakingMath
+  href: FreakingMath.LifeControl.html
+  name: LifeControl
+  nameWithType: LifeControl
+  fullName: FreakingMath.LifeControl
+- uid: FreakingMath.GameOverControl
+  commentId: T:FreakingMath.GameOverControl
+  parent: FreakingMath
+  href: FreakingMath.GameOverControl.html
+  name: GameOverControl
+  nameWithType: GameOverControl
+  fullName: FreakingMath.GameOverControl
+- uid: FreakingMath.TimerBarControl
+  commentId: T:FreakingMath.TimerBarControl
+  parent: FreakingMath
+  href: FreakingMath.TimerBarControl.html
+  name: TimerBarControl
+  nameWithType: TimerBarControl
+  fullName: FreakingMath.TimerBarControl
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: FreakingMath.GameDataManager
+  commentId: T:FreakingMath.GameDataManager
+  parent: FreakingMath
+  href: FreakingMath.GameDataManager.html
+  name: GameDataManager
+  nameWithType: GameDataManager
+  fullName: FreakingMath.GameDataManager
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: FreakingMath.GameControl.Start*
+  commentId: Overload:FreakingMath.GameControl.Start
+  href: FreakingMath.GameControl.html#FreakingMath_GameControl_Start
+  name: Start
+  nameWithType: GameControl.Start
+  fullName: FreakingMath.GameControl.Start
+- uid: FreakingMath.GameControl.GenerateQuestion*
+  commentId: Overload:FreakingMath.GameControl.GenerateQuestion
+  href: FreakingMath.GameControl.html#FreakingMath_GameControl_GenerateQuestion
+  name: GenerateQuestion
+  nameWithType: GameControl.GenerateQuestion
+  fullName: FreakingMath.GameControl.GenerateQuestion
+- uid: FreakingMath.GameControl.GiveAnswer*
+  commentId: Overload:FreakingMath.GameControl.GiveAnswer
+  href: FreakingMath.GameControl.html#FreakingMath_GameControl_GiveAnswer
+  name: GiveAnswer
+  nameWithType: GameControl.GiveAnswer
+  fullName: FreakingMath.GameControl.GiveAnswer
+- uid: FreakingMath.GameControl.HandleClick*
+  commentId: Overload:FreakingMath.GameControl.HandleClick
+  href: FreakingMath.GameControl.html#FreakingMath_GameControl_HandleClick_System_Int32_
+  name: HandleClick
+  nameWithType: GameControl.HandleClick
+  fullName: FreakingMath.GameControl.HandleClick
+- uid: FreakingMath.GameControl.ResetBonusLife*
+  commentId: Overload:FreakingMath.GameControl.ResetBonusLife
+  href: FreakingMath.GameControl.html#FreakingMath_GameControl_ResetBonusLife
+  name: ResetBonusLife
+  nameWithType: GameControl.ResetBonusLife
+  fullName: FreakingMath.GameControl.ResetBonusLife
+- uid: FreakingMath.GameControl.ShowGameOver*
+  commentId: Overload:FreakingMath.GameControl.ShowGameOver
+  href: FreakingMath.GameControl.html#FreakingMath_GameControl_ShowGameOver
+  name: ShowGameOver
+  nameWithType: GameControl.ShowGameOver
+  fullName: FreakingMath.GameControl.ShowGameOver

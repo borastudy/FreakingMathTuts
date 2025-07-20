@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.HintControl
+  commentId: T:FreakingMath.HintControl
+  id: HintControl
+  parent: FreakingMath
+  children:
+  - FreakingMath.HintControl.DoGiveAnswer
+  - FreakingMath.HintControl.DoPauseTimer
+  - FreakingMath.HintControl.gameControl
+  - FreakingMath.HintControl.timerControl
+  langs:
+  - csharp
+  - vb
+  name: HintControl
+  nameWithType: HintControl
+  fullName: FreakingMath.HintControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/HintControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: HintControl
+    path: ../Assets/Scripts/HintControl.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class HintControl : MonoBehaviour'
+    content.vb: Public Class HintControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.HintControl.gameControl
+  commentId: F:FreakingMath.HintControl.gameControl
+  id: gameControl
+  parent: FreakingMath.HintControl
+  langs:
+  - csharp
+  - vb
+  name: gameControl
+  nameWithType: HintControl.gameControl
+  fullName: FreakingMath.HintControl.gameControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/HintControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: gameControl
+    path: ../Assets/Scripts/HintControl.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private GameControl gameControl
+    return:
+      type: FreakingMath.GameControl
+    content.vb: >-
+      <SerializeField>
+
+      Private gameControl As GameControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.HintControl.timerControl
+  commentId: F:FreakingMath.HintControl.timerControl
+  id: timerControl
+  parent: FreakingMath.HintControl
+  langs:
+  - csharp
+  - vb
+  name: timerControl
+  nameWithType: HintControl.timerControl
+  fullName: FreakingMath.HintControl.timerControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/HintControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: timerControl
+    path: ../Assets/Scripts/HintControl.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private TimerBarControl timerControl
+    return:
+      type: FreakingMath.TimerBarControl
+    content.vb: >-
+      <SerializeField>
+
+      Private timerControl As TimerBarControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.HintControl.DoGiveAnswer
+  commentId: M:FreakingMath.HintControl.DoGiveAnswer
+  id: DoGiveAnswer
+  parent: FreakingMath.HintControl
+  langs:
+  - csharp
+  - vb
+  name: DoGiveAnswer()
+  nameWithType: HintControl.DoGiveAnswer()
+  fullName: FreakingMath.HintControl.DoGiveAnswer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/HintControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: DoGiveAnswer
+    path: ../Assets/Scripts/HintControl.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void DoGiveAnswer()
+    content.vb: Public Sub DoGiveAnswer()
+  overload: FreakingMath.HintControl.DoGiveAnswer*
+- uid: FreakingMath.HintControl.DoPauseTimer
+  commentId: M:FreakingMath.HintControl.DoPauseTimer
+  id: DoPauseTimer
+  parent: FreakingMath.HintControl
+  langs:
+  - csharp
+  - vb
+  name: DoPauseTimer()
+  nameWithType: HintControl.DoPauseTimer()
+  fullName: FreakingMath.HintControl.DoPauseTimer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/HintControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: DoPauseTimer
+    path: ../Assets/Scripts/HintControl.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void DoPauseTimer()
+    content.vb: Public Sub DoPauseTimer()
+  overload: FreakingMath.HintControl.DoPauseTimer*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: FreakingMath.GameControl
+  commentId: T:FreakingMath.GameControl
+  parent: FreakingMath
+  href: FreakingMath.GameControl.html
+  name: GameControl
+  nameWithType: GameControl
+  fullName: FreakingMath.GameControl
+- uid: FreakingMath.TimerBarControl
+  commentId: T:FreakingMath.TimerBarControl
+  parent: FreakingMath
+  href: FreakingMath.TimerBarControl.html
+  name: TimerBarControl
+  nameWithType: TimerBarControl
+  fullName: FreakingMath.TimerBarControl
+- uid: FreakingMath.HintControl.DoGiveAnswer*
+  commentId: Overload:FreakingMath.HintControl.DoGiveAnswer
+  href: FreakingMath.HintControl.html#FreakingMath_HintControl_DoGiveAnswer
+  name: DoGiveAnswer
+  nameWithType: HintControl.DoGiveAnswer
+  fullName: FreakingMath.HintControl.DoGiveAnswer
+- uid: FreakingMath.HintControl.DoPauseTimer*
+  commentId: Overload:FreakingMath.HintControl.DoPauseTimer
+  href: FreakingMath.HintControl.html#FreakingMath_HintControl_DoPauseTimer
+  name: DoPauseTimer
+  nameWithType: HintControl.DoPauseTimer
+  fullName: FreakingMath.HintControl.DoPauseTimer

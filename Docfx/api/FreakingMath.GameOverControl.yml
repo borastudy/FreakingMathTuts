@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.GameOverControl
+  commentId: T:FreakingMath.GameOverControl
+  id: GameOverControl
+  parent: FreakingMath
+  children:
+  - FreakingMath.GameOverControl.ClickNoThankYou
+  - FreakingMath.GameOverControl.ClickToContinue
+  - FreakingMath.GameOverControl.SetScore(System.Int32)
+  - FreakingMath.GameOverControl.lifeControl
+  - FreakingMath.GameOverControl.textScore
+  - FreakingMath.GameOverControl.timerBarControl
+  langs:
+  - csharp
+  - vb
+  name: GameOverControl
+  nameWithType: GameOverControl
+  fullName: FreakingMath.GameOverControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/GameOverControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: GameOverControl
+    path: ../Assets/Scripts/GameOverControl.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class GameOverControl : MonoBehaviour'
+    content.vb: Public Class GameOverControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.GameOverControl.textScore
+  commentId: F:FreakingMath.GameOverControl.textScore
+  id: textScore
+  parent: FreakingMath.GameOverControl
+  langs:
+  - csharp
+  - vb
+  name: textScore
+  nameWithType: GameOverControl.textScore
+  fullName: FreakingMath.GameOverControl.textScore
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameOverControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textScore
+    path: ../Assets/Scripts/GameOverControl.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textScore
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textScore As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameOverControl.lifeControl
+  commentId: F:FreakingMath.GameOverControl.lifeControl
+  id: lifeControl
+  parent: FreakingMath.GameOverControl
+  langs:
+  - csharp
+  - vb
+  name: lifeControl
+  nameWithType: GameOverControl.lifeControl
+  fullName: FreakingMath.GameOverControl.lifeControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameOverControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: lifeControl
+    path: ../Assets/Scripts/GameOverControl.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private LifeControl lifeControl
+    return:
+      type: FreakingMath.LifeControl
+    content.vb: >-
+      <SerializeField>
+
+      Private lifeControl As LifeControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameOverControl.timerBarControl
+  commentId: F:FreakingMath.GameOverControl.timerBarControl
+  id: timerBarControl
+  parent: FreakingMath.GameOverControl
+  langs:
+  - csharp
+  - vb
+  name: timerBarControl
+  nameWithType: GameOverControl.timerBarControl
+  fullName: FreakingMath.GameOverControl.timerBarControl
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameOverControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: timerBarControl
+    path: ../Assets/Scripts/GameOverControl.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private TimerBarControl timerBarControl
+    return:
+      type: FreakingMath.TimerBarControl
+    content.vb: >-
+      <SerializeField>
+
+      Private timerBarControl As TimerBarControl
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.GameOverControl.SetScore(System.Int32)
+  commentId: M:FreakingMath.GameOverControl.SetScore(System.Int32)
+  id: SetScore(System.Int32)
+  parent: FreakingMath.GameOverControl
+  langs:
+  - csharp
+  - vb
+  name: SetScore(int)
+  nameWithType: GameOverControl.SetScore(int)
+  fullName: FreakingMath.GameOverControl.SetScore(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameOverControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: SetScore
+    path: ../Assets/Scripts/GameOverControl.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void SetScore(int score)
+    parameters:
+    - id: score
+      type: System.Int32
+    content.vb: Public Sub SetScore(score As Integer)
+  overload: FreakingMath.GameOverControl.SetScore*
+  nameWithType.vb: GameOverControl.SetScore(Integer)
+  fullName.vb: FreakingMath.GameOverControl.SetScore(Integer)
+  name.vb: SetScore(Integer)
+- uid: FreakingMath.GameOverControl.ClickToContinue
+  commentId: M:FreakingMath.GameOverControl.ClickToContinue
+  id: ClickToContinue
+  parent: FreakingMath.GameOverControl
+  langs:
+  - csharp
+  - vb
+  name: ClickToContinue()
+  nameWithType: GameOverControl.ClickToContinue()
+  fullName: FreakingMath.GameOverControl.ClickToContinue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameOverControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: ClickToContinue
+    path: ../Assets/Scripts/GameOverControl.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void ClickToContinue()
+    content.vb: Public Sub ClickToContinue()
+  overload: FreakingMath.GameOverControl.ClickToContinue*
+- uid: FreakingMath.GameOverControl.ClickNoThankYou
+  commentId: M:FreakingMath.GameOverControl.ClickNoThankYou
+  id: ClickNoThankYou
+  parent: FreakingMath.GameOverControl
+  langs:
+  - csharp
+  - vb
+  name: ClickNoThankYou()
+  nameWithType: GameOverControl.ClickNoThankYou()
+  fullName: FreakingMath.GameOverControl.ClickNoThankYou()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GameOverControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: ClickNoThankYou
+    path: ../Assets/Scripts/GameOverControl.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void ClickNoThankYou()
+    content.vb: Public Sub ClickNoThankYou()
+  overload: FreakingMath.GameOverControl.ClickNoThankYou*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: FreakingMath.LifeControl
+  commentId: T:FreakingMath.LifeControl
+  parent: FreakingMath
+  href: FreakingMath.LifeControl.html
+  name: LifeControl
+  nameWithType: LifeControl
+  fullName: FreakingMath.LifeControl
+- uid: FreakingMath.TimerBarControl
+  commentId: T:FreakingMath.TimerBarControl
+  parent: FreakingMath
+  href: FreakingMath.TimerBarControl.html
+  name: TimerBarControl
+  nameWithType: TimerBarControl
+  fullName: FreakingMath.TimerBarControl
+- uid: FreakingMath.GameOverControl.SetScore*
+  commentId: Overload:FreakingMath.GameOverControl.SetScore
+  href: FreakingMath.GameOverControl.html#FreakingMath_GameOverControl_SetScore_System_Int32_
+  name: SetScore
+  nameWithType: GameOverControl.SetScore
+  fullName: FreakingMath.GameOverControl.SetScore
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: FreakingMath.GameOverControl.ClickToContinue*
+  commentId: Overload:FreakingMath.GameOverControl.ClickToContinue
+  href: FreakingMath.GameOverControl.html#FreakingMath_GameOverControl_ClickToContinue
+  name: ClickToContinue
+  nameWithType: GameOverControl.ClickToContinue
+  fullName: FreakingMath.GameOverControl.ClickToContinue
+- uid: FreakingMath.GameOverControl.ClickNoThankYou*
+  commentId: Overload:FreakingMath.GameOverControl.ClickNoThankYou
+  href: FreakingMath.GameOverControl.html#FreakingMath_GameOverControl_ClickNoThankYou
+  name: ClickNoThankYou
+  nameWithType: GameOverControl.ClickNoThankYou
+  fullName: FreakingMath.GameOverControl.ClickNoThankYou

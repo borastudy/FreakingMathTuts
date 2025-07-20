@@ -3,19 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HomeControl : MonoBehaviour
+
+namespace FreakingMath
 {
-    [SerializeField] Text textScore;
-    private GameDataManager gameDataManager;
-
-    private void Start()
+    public class HomeControl : MonoBehaviour
     {
-        gameDataManager = GameDataManager.dataManager;
-        textScore.text = gameDataManager.HighScore.ToString();
-    }
-
-    public void ClickToGameScene ()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        [SerializeField] Text textScore;
+        private GameDataManager gameDataManager;
+    
+        private void Start()
+        {
+            gameDataManager = GameDataManager.dataManager;
+            textScore.text = gameDataManager.HighScore.ToString();
+        }
+    
+        public void ClickToGameScene ()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        }
     }
 }

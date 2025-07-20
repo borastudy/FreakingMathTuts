@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.MathOperator
+  commentId: T:FreakingMath.MathOperator
+  id: MathOperator
+  parent: FreakingMath
+  children:
+  - FreakingMath.MathOperator.DEVIDE
+  - FreakingMath.MathOperator.MINUS
+  - FreakingMath.MathOperator.MULTIPLY
+  - FreakingMath.MathOperator.PLUS
+  langs:
+  - csharp
+  - vb
+  name: MathOperator
+  nameWithType: MathOperator
+  fullName: FreakingMath.MathOperator
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: MathOperator
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: internal enum MathOperator
+    content.vb: Friend Enum MathOperator
+- uid: FreakingMath.MathOperator.PLUS
+  commentId: F:FreakingMath.MathOperator.PLUS
+  id: PLUS
+  parent: FreakingMath.MathOperator
+  langs:
+  - csharp
+  - vb
+  name: PLUS
+  nameWithType: MathOperator.PLUS
+  fullName: FreakingMath.MathOperator.PLUS
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: PLUS
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: PLUS = 0
+    return:
+      type: FreakingMath.MathOperator
+- uid: FreakingMath.MathOperator.MINUS
+  commentId: F:FreakingMath.MathOperator.MINUS
+  id: MINUS
+  parent: FreakingMath.MathOperator
+  langs:
+  - csharp
+  - vb
+  name: MINUS
+  nameWithType: MathOperator.MINUS
+  fullName: FreakingMath.MathOperator.MINUS
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: MINUS
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: MINUS = 1
+    return:
+      type: FreakingMath.MathOperator
+- uid: FreakingMath.MathOperator.MULTIPLY
+  commentId: F:FreakingMath.MathOperator.MULTIPLY
+  id: MULTIPLY
+  parent: FreakingMath.MathOperator
+  langs:
+  - csharp
+  - vb
+  name: MULTIPLY
+  nameWithType: MathOperator.MULTIPLY
+  fullName: FreakingMath.MathOperator.MULTIPLY
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: MULTIPLY
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: MULTIPLY = 2
+    return:
+      type: FreakingMath.MathOperator
+- uid: FreakingMath.MathOperator.DEVIDE
+  commentId: F:FreakingMath.MathOperator.DEVIDE
+  id: DEVIDE
+  parent: FreakingMath.MathOperator
+  langs:
+  - csharp
+  - vb
+  name: DEVIDE
+  nameWithType: MathOperator.DEVIDE
+  fullName: FreakingMath.MathOperator.DEVIDE
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BrainScript.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: DEVIDE
+    path: ../Assets/Scripts/BrainScript.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: DEVIDE = 3
+    return:
+      type: FreakingMath.MathOperator
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: FreakingMath.MathOperator
+  commentId: T:FreakingMath.MathOperator
+  parent: FreakingMath
+  href: FreakingMath.MathOperator.html
+  name: MathOperator
+  nameWithType: MathOperator
+  fullName: FreakingMath.MathOperator

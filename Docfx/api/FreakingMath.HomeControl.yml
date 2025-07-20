@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: FreakingMath.HomeControl
+  commentId: T:FreakingMath.HomeControl
+  id: HomeControl
+  parent: FreakingMath
+  children:
+  - FreakingMath.HomeControl.ClickToGameScene
+  - FreakingMath.HomeControl.Start
+  - FreakingMath.HomeControl.gameDataManager
+  - FreakingMath.HomeControl.textScore
+  langs:
+  - csharp
+  - vb
+  name: HomeControl
+  nameWithType: HomeControl
+  fullName: FreakingMath.HomeControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/HomeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: HomeControl
+    path: ../Assets/Scripts/HomeControl.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: 'public class HomeControl : MonoBehaviour'
+    content.vb: Public Class HomeControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: FreakingMath.HomeControl.textScore
+  commentId: F:FreakingMath.HomeControl.textScore
+  id: textScore
+  parent: FreakingMath.HomeControl
+  langs:
+  - csharp
+  - vb
+  name: textScore
+  nameWithType: HomeControl.textScore
+  fullName: FreakingMath.HomeControl.textScore
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/HomeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textScore
+    path: ../Assets/Scripts/HomeControl.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textScore
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textScore As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: FreakingMath.HomeControl.gameDataManager
+  commentId: F:FreakingMath.HomeControl.gameDataManager
+  id: gameDataManager
+  parent: FreakingMath.HomeControl
+  langs:
+  - csharp
+  - vb
+  name: gameDataManager
+  nameWithType: HomeControl.gameDataManager
+  fullName: FreakingMath.HomeControl.gameDataManager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/HomeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: gameDataManager
+    path: ../Assets/Scripts/HomeControl.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private GameDataManager gameDataManager
+    return:
+      type: FreakingMath.GameDataManager
+    content.vb: Private gameDataManager As GameDataManager
+- uid: FreakingMath.HomeControl.Start
+  commentId: M:FreakingMath.HomeControl.Start
+  id: Start
+  parent: FreakingMath.HomeControl
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: HomeControl.Start()
+  fullName: FreakingMath.HomeControl.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/HomeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Start
+    path: ../Assets/Scripts/HomeControl.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: FreakingMath.HomeControl.Start*
+- uid: FreakingMath.HomeControl.ClickToGameScene
+  commentId: M:FreakingMath.HomeControl.ClickToGameScene
+  id: ClickToGameScene
+  parent: FreakingMath.HomeControl
+  langs:
+  - csharp
+  - vb
+  name: ClickToGameScene()
+  nameWithType: HomeControl.ClickToGameScene()
+  fullName: FreakingMath.HomeControl.ClickToGameScene()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/HomeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: ClickToGameScene
+    path: ../Assets/Scripts/HomeControl.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: FreakingMath
+  syntax:
+    content: public void ClickToGameScene()
+    content.vb: Public Sub ClickToGameScene()
+  overload: FreakingMath.HomeControl.ClickToGameScene*
+references:
+- uid: FreakingMath
+  commentId: N:FreakingMath
+  href: FreakingMath.html
+  name: FreakingMath
+  nameWithType: FreakingMath
+  fullName: FreakingMath
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: FreakingMath.GameDataManager
+  commentId: T:FreakingMath.GameDataManager
+  parent: FreakingMath
+  href: FreakingMath.GameDataManager.html
+  name: GameDataManager
+  nameWithType: GameDataManager
+  fullName: FreakingMath.GameDataManager
+- uid: FreakingMath.HomeControl.Start*
+  commentId: Overload:FreakingMath.HomeControl.Start
+  href: FreakingMath.HomeControl.html#FreakingMath_HomeControl_Start
+  name: Start
+  nameWithType: HomeControl.Start
+  fullName: FreakingMath.HomeControl.Start
+- uid: FreakingMath.HomeControl.ClickToGameScene*
+  commentId: Overload:FreakingMath.HomeControl.ClickToGameScene
+  href: FreakingMath.HomeControl.html#FreakingMath_HomeControl_ClickToGameScene
+  name: ClickToGameScene
+  nameWithType: HomeControl.ClickToGameScene
+  fullName: FreakingMath.HomeControl.ClickToGameScene
