@@ -1,0 +1,5 @@
+<map id="GameControl.HandleClick" name="GameControl.HandleClick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="227,5,400,31"/>
+<area shape="rect" id="Node000002" href="$class_game_control.html#af2d38bd3ca66d46a7a73853bbcb3ebd5" title=" " alt="" coords="5,5,179,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,21,179,21,179,16,211,16"/>
+</map>

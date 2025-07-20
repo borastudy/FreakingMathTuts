@@ -1,0 +1,19 @@
+<map id="GameControl.HandleClick" name="GameControl.HandleClick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,141,179,166"/>
+<area shape="rect" id="Node000002" href="$class_game_control.html#a242ddae70b3374fd3e83996d72abcd90" title=" " alt="" coords="227,116,434,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,142,211,138,211,144,179,147"/>
+<area shape="rect" id="Node000009" href="$class_game_control.html#ac4021786cf0a7493a0f75463f64b85f0" title=" " alt="" coords="231,165,430,190"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="179,160,216,163,215,169,179,165"/>
+<area shape="rect" id="Node000003" href="$class_brain_script.html#a05c28dea443bf3fc0490c5201a3d7c72" title=" " alt="" coords="493,41,662,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,112,481,75,505,68,507,73,483,80,370,117"/>
+<area shape="rect" id="Node000006" href="$class_brain_script.html#aca5688dcc3a2e43ffe34f7a60ee6f9c1" title=" " alt="" coords="482,90,673,116"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="434,115,466,112,467,117,435,120"/>
+<area shape="rect" id="Node000007" href="$class_brain_script.html#af96b045abb6b163c9ae84f62c074c441" title=" " alt="" coords="496,140,659,165"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="435,136,481,140,481,146,434,141"/>
+<area shape="rect" id="Node000008" href="$class_brain_script.html#ad82f5f40fcf2133f80ad53da09862cb9" title=" " alt="" coords="500,189,655,214"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="401,139,435,150,459,163,483,175,501,181,499,186,481,180,457,167,433,155,399,144"/>
+<area shape="rect" id="Node000004" href="$class_brain_script.html#a4c108405bbb30b327a5dee1104d92e45" title=" " alt="" coords="721,5,893,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="662,41,706,35,706,41,663,46"/>
+<area shape="rect" id="Node000005" href="$class_brain_script.html#a7488a704ae10ac733c1f103b412c96c9" title=" " alt="" coords="742,70,872,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="663,62,727,70,726,75,662,67"/>
+</map>

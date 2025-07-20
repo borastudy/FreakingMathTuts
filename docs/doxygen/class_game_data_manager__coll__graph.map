@@ -1,0 +1,6 @@
+<map id="GameDataManager" name="GameDataManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,121,129,228"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="130,158,148,163,156,175,147,186,143,183,150,174,145,167,128,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="17,5,118,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,87,70,121,64,121,64,87"/>
+</map>
