@@ -1,0 +1,17 @@
+<map id="GameControl.Start" name="GameControl.Start">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,116,136,141"/>
+<area shape="rect" id="Node000002" href="$class_game_control.html#a242ddae70b3374fd3e83996d72abcd90" title=" " alt="" coords="184,116,391,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,126,168,126,168,131,136,131"/>
+<area shape="rect" id="Node000003" href="$class_brain_script.html#a05c28dea443bf3fc0490c5201a3d7c72" title=" " alt="" coords="450,41,619,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,112,438,75,462,68,464,73,440,80,327,117"/>
+<area shape="rect" id="Node000006" href="$class_brain_script.html#aca5688dcc3a2e43ffe34f7a60ee6f9c1" title=" " alt="" coords="439,90,630,116"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="391,115,423,112,424,117,392,120"/>
+<area shape="rect" id="Node000007" href="$class_brain_script.html#af96b045abb6b163c9ae84f62c074c441" title=" " alt="" coords="454,140,616,165"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="392,136,438,140,438,146,391,141"/>
+<area shape="rect" id="Node000008" href="$class_brain_script.html#ad82f5f40fcf2133f80ad53da09862cb9" title=" " alt="" coords="457,189,612,214"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="328,139,440,175,464,182,462,187,438,180,326,144"/>
+<area shape="rect" id="Node000004" href="$class_brain_script.html#a4c108405bbb30b327a5dee1104d92e45" title=" " alt="" coords="678,5,850,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="619,41,663,35,663,41,620,46"/>
+<area shape="rect" id="Node000005" href="$class_brain_script.html#a7488a704ae10ac733c1f103b412c96c9" title=" " alt="" coords="699,70,829,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="620,62,684,70,683,75,619,67"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="LifeControl.RefreshExtraLife" name="LifeControl.RefreshExtraLife">
+<area shape="rect" id="Node000001" title=" " alt="" coords="392,31,578,56"/>
+<area shape="rect" id="Node000002" href="$class_life_control.html#aec589ac32eddb27f0ac0bfb1867dbc75" title=" " alt="" coords="196,5,334,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="376,34,333,29,334,23,377,28"/>
+<area shape="rect" id="Node000004" href="$class_life_control.html#a5fd5f45f6e90b6951f995fa3d60e8b93" title=" " alt="" coords="186,55,344,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="377,58,345,62,344,56,376,53"/>
+<area shape="rect" id="Node000003" href="$class_life_control.html#ab9d677b943e75e141b8241ec38011b5c" title=" " alt="" coords="5,5,138,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,21,138,21,138,16,180,16"/>
+</map>
