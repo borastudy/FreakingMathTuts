@@ -1,0 +1,632 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityMathQuiz.LifeControl
+  commentId: T:UnityMathQuiz.LifeControl
+  id: LifeControl
+  parent: UnityMathQuiz
+  children:
+  - UnityMathQuiz.LifeControl.AddLife
+  - UnityMathQuiz.LifeControl.IsDie
+  - UnityMathQuiz.LifeControl.RefreshExtraLife
+  - UnityMathQuiz.LifeControl.RemoveLife
+  - UnityMathQuiz.LifeControl.ResetLife
+  - UnityMathQuiz.LifeControl.Start
+  - UnityMathQuiz.LifeControl.StillHasLife
+  - UnityMathQuiz.LifeControl._addLife
+  - UnityMathQuiz.LifeControl.animator
+  - UnityMathQuiz.LifeControl.textExtraLife
+  - UnityMathQuiz.LifeControl.toggles
+  - UnityMathQuiz.LifeControl.totalLife
+  langs:
+  - csharp
+  - vb
+  name: LifeControl
+  nameWithType: LifeControl
+  fullName: UnityMathQuiz.LifeControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: LifeControl
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: 'public class LifeControl : MonoBehaviour'
+    content.vb: Public Class LifeControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UnityMathQuiz.LifeControl.toggles
+  commentId: F:UnityMathQuiz.LifeControl.toggles
+  id: toggles
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: toggles
+  nameWithType: LifeControl.toggles
+  fullName: UnityMathQuiz.LifeControl.toggles
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: toggles
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Toggle[] toggles
+    return:
+      type: UnityEngine.UI.Toggle[]
+    content.vb: >-
+      <SerializeField>
+
+      Private toggles As Toggle()
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: UnityMathQuiz.LifeControl.totalLife
+  commentId: F:UnityMathQuiz.LifeControl.totalLife
+  id: totalLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: totalLife
+  nameWithType: LifeControl.totalLife
+  fullName: UnityMathQuiz.LifeControl.totalLife
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: totalLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private int totalLife
+    return:
+      type: System.Int32
+    content.vb: >-
+      <SerializeField>
+
+      Private totalLife As Integer
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: UnityMathQuiz.LifeControl.textExtraLife
+  commentId: F:UnityMathQuiz.LifeControl.textExtraLife
+  id: textExtraLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: textExtraLife
+  nameWithType: LifeControl.textExtraLife
+  fullName: UnityMathQuiz.LifeControl.textExtraLife
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: textExtraLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Text textExtraLife
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: >-
+      <SerializeField>
+
+      Private textExtraLife As Text
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: UnityMathQuiz.LifeControl.animator
+  commentId: F:UnityMathQuiz.LifeControl.animator
+  id: animator
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: animator
+  nameWithType: LifeControl.animator
+  fullName: UnityMathQuiz.LifeControl.animator
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: animator
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Animator animator
+    return:
+      type: UnityEngine.Animator
+    content.vb: >-
+      <SerializeField>
+
+      Private animator As Animator
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: UnityMathQuiz.LifeControl.Start
+  commentId: M:UnityMathQuiz.LifeControl.Start
+  id: Start
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: LifeControl.Start()
+  fullName: UnityMathQuiz.LifeControl.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Start
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: UnityMathQuiz.LifeControl.Start*
+- uid: UnityMathQuiz.LifeControl.RemoveLife
+  commentId: M:UnityMathQuiz.LifeControl.RemoveLife
+  id: RemoveLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: RemoveLife()
+  nameWithType: LifeControl.RemoveLife()
+  fullName: UnityMathQuiz.LifeControl.RemoveLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: RemoveLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: public void RemoveLife()
+    content.vb: Public Sub RemoveLife()
+  overload: UnityMathQuiz.LifeControl.RemoveLife*
+- uid: UnityMathQuiz.LifeControl.AddLife
+  commentId: M:UnityMathQuiz.LifeControl.AddLife
+  id: AddLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: AddLife()
+  nameWithType: LifeControl.AddLife()
+  fullName: UnityMathQuiz.LifeControl.AddLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: AddLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: public void AddLife()
+    content.vb: Public Sub AddLife()
+  overload: UnityMathQuiz.LifeControl.AddLife*
+- uid: UnityMathQuiz.LifeControl._addLife
+  commentId: M:UnityMathQuiz.LifeControl._addLife
+  id: _addLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: _addLife()
+  nameWithType: LifeControl._addLife()
+  fullName: UnityMathQuiz.LifeControl._addLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: _addLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: private IEnumerator _addLife()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function _addLife() As IEnumerator
+  overload: UnityMathQuiz.LifeControl._addLife*
+- uid: UnityMathQuiz.LifeControl.RefreshExtraLife
+  commentId: M:UnityMathQuiz.LifeControl.RefreshExtraLife
+  id: RefreshExtraLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: RefreshExtraLife()
+  nameWithType: LifeControl.RefreshExtraLife()
+  fullName: UnityMathQuiz.LifeControl.RefreshExtraLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: RefreshExtraLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  summary: Updates the UI element that displays extra lives beyond the default limit.
+  remarks: >-
+    If the <code>totalLife</code> exceeds 5, this method calculates the extra lives and updates the
+
+    <code>textExtraLife</code> UI text to show the surplus in the format "+X".
+
+    If <code>totalLife</code> is 5 or less, the extra life text is cleared.
+  example: []
+  syntax:
+    content: private void RefreshExtraLife()
+    content.vb: Private Sub RefreshExtraLife()
+  overload: UnityMathQuiz.LifeControl.RefreshExtraLife*
+- uid: UnityMathQuiz.LifeControl.StillHasLife
+  commentId: M:UnityMathQuiz.LifeControl.StillHasLife
+  id: StillHasLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: StillHasLife()
+  nameWithType: LifeControl.StillHasLife()
+  fullName: UnityMathQuiz.LifeControl.StillHasLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: StillHasLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: public bool StillHasLife()
+    return:
+      type: System.Boolean
+    content.vb: Public Function StillHasLife() As Boolean
+  overload: UnityMathQuiz.LifeControl.StillHasLife*
+- uid: UnityMathQuiz.LifeControl.IsDie
+  commentId: M:UnityMathQuiz.LifeControl.IsDie
+  id: IsDie
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: IsDie()
+  nameWithType: LifeControl.IsDie()
+  fullName: UnityMathQuiz.LifeControl.IsDie()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: IsDie
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: public bool IsDie()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsDie() As Boolean
+  overload: UnityMathQuiz.LifeControl.IsDie*
+- uid: UnityMathQuiz.LifeControl.ResetLife
+  commentId: M:UnityMathQuiz.LifeControl.ResetLife
+  id: ResetLife
+  parent: UnityMathQuiz.LifeControl
+  langs:
+  - csharp
+  - vb
+  name: ResetLife()
+  nameWithType: LifeControl.ResetLife()
+  fullName: UnityMathQuiz.LifeControl.ResetLife()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LifeControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: ResetLife
+    path: ../Assets/Scripts/LifeControl.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: public void ResetLife()
+    content.vb: Public Sub ResetLife()
+  overload: UnityMathQuiz.LifeControl.ResetLife*
+references:
+- uid: UnityMathQuiz
+  commentId: N:UnityMathQuiz
+  href: UnityMathQuiz.html
+  name: UnityMathQuiz
+  nameWithType: UnityMathQuiz
+  fullName: UnityMathQuiz
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Toggle[]
+  isExternal: true
+  name: Toggle[]
+  nameWithType: Toggle[]
+  fullName: UnityEngine.UI.Toggle[]
+  nameWithType.vb: Toggle()
+  fullName.vb: UnityEngine.UI.Toggle()
+  name.vb: Toggle()
+  spec.csharp:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: UnityMathQuiz.LifeControl.Start*
+  commentId: Overload:UnityMathQuiz.LifeControl.Start
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl_Start
+  name: Start
+  nameWithType: LifeControl.Start
+  fullName: UnityMathQuiz.LifeControl.Start
+- uid: UnityMathQuiz.LifeControl.RemoveLife*
+  commentId: Overload:UnityMathQuiz.LifeControl.RemoveLife
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl_RemoveLife
+  name: RemoveLife
+  nameWithType: LifeControl.RemoveLife
+  fullName: UnityMathQuiz.LifeControl.RemoveLife
+- uid: UnityMathQuiz.LifeControl.AddLife*
+  commentId: Overload:UnityMathQuiz.LifeControl.AddLife
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl_AddLife
+  name: AddLife
+  nameWithType: LifeControl.AddLife
+  fullName: UnityMathQuiz.LifeControl.AddLife
+- uid: UnityMathQuiz.LifeControl._addLife*
+  commentId: Overload:UnityMathQuiz.LifeControl._addLife
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl__addLife
+  name: _addLife
+  nameWithType: LifeControl._addLife
+  fullName: UnityMathQuiz.LifeControl._addLife
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: UnityMathQuiz.LifeControl.RefreshExtraLife*
+  commentId: Overload:UnityMathQuiz.LifeControl.RefreshExtraLife
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl_RefreshExtraLife
+  name: RefreshExtraLife
+  nameWithType: LifeControl.RefreshExtraLife
+  fullName: UnityMathQuiz.LifeControl.RefreshExtraLife
+- uid: UnityMathQuiz.LifeControl.StillHasLife*
+  commentId: Overload:UnityMathQuiz.LifeControl.StillHasLife
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl_StillHasLife
+  name: StillHasLife
+  nameWithType: LifeControl.StillHasLife
+  fullName: UnityMathQuiz.LifeControl.StillHasLife
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityMathQuiz.LifeControl.IsDie*
+  commentId: Overload:UnityMathQuiz.LifeControl.IsDie
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl_IsDie
+  name: IsDie
+  nameWithType: LifeControl.IsDie
+  fullName: UnityMathQuiz.LifeControl.IsDie
+- uid: UnityMathQuiz.LifeControl.ResetLife*
+  commentId: Overload:UnityMathQuiz.LifeControl.ResetLife
+  href: UnityMathQuiz.LifeControl.html#UnityMathQuiz_LifeControl_ResetLife
+  name: ResetLife
+  nameWithType: LifeControl.ResetLife
+  fullName: UnityMathQuiz.LifeControl.ResetLife

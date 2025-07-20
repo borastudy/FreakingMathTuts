@@ -1,0 +1,20 @@
+{
+  "UnityMathQuiz": "UnityMathQuiz.yml",
+  "UnityMathQuiz.LifeControl": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.AddLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.IsDie": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.RefreshExtraLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.RemoveLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.ResetLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.Start": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.StillHasLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl._addLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.animator": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.textExtraLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.toggles": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.LifeControl.totalLife": "UnityMathQuiz.LifeControl.yml",
+  "UnityMathQuiz.SplashControl": "UnityMathQuiz.SplashControl.yml",
+  "UnityMathQuiz.SplashControl.Start": "UnityMathQuiz.SplashControl.yml",
+  "UnityMathQuiz.SplashControl.WaitingAndLoad": "UnityMathQuiz.SplashControl.yml",
+  "UnityMathQuiz.SplashControl.delayBeforeHome": "UnityMathQuiz.SplashControl.yml"
+}

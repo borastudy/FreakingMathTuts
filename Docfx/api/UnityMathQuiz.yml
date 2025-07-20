@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityMathQuiz
+  commentId: N:UnityMathQuiz
+  id: UnityMathQuiz
+  children:
+  - UnityMathQuiz.LifeControl
+  - UnityMathQuiz.SplashControl
+  langs:
+  - csharp
+  - vb
+  name: UnityMathQuiz
+  nameWithType: UnityMathQuiz
+  fullName: UnityMathQuiz
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: UnityMathQuiz.LifeControl
+  commentId: T:UnityMathQuiz.LifeControl
+  href: UnityMathQuiz.LifeControl.html
+  name: LifeControl
+  nameWithType: LifeControl
+  fullName: UnityMathQuiz.LifeControl
+- uid: UnityMathQuiz.SplashControl
+  commentId: T:UnityMathQuiz.SplashControl
+  href: UnityMathQuiz.SplashControl.html
+  name: SplashControl
+  nameWithType: SplashControl
+  fullName: UnityMathQuiz.SplashControl

@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityMathQuiz.SplashControl
+  commentId: T:UnityMathQuiz.SplashControl
+  id: SplashControl
+  parent: UnityMathQuiz
+  children:
+  - UnityMathQuiz.SplashControl.Start
+  - UnityMathQuiz.SplashControl.WaitingAndLoad
+  - UnityMathQuiz.SplashControl.delayBeforeHome
+  langs:
+  - csharp
+  - vb
+  name: SplashControl
+  nameWithType: SplashControl
+  fullName: UnityMathQuiz.SplashControl
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/SplashControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: SplashControl
+    path: ../Assets/Scripts/SplashControl.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: 'public class SplashControl : MonoBehaviour'
+    content.vb: Public Class SplashControl Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UnityMathQuiz.SplashControl.delayBeforeHome
+  commentId: F:UnityMathQuiz.SplashControl.delayBeforeHome
+  id: delayBeforeHome
+  parent: UnityMathQuiz.SplashControl
+  langs:
+  - csharp
+  - vb
+  name: delayBeforeHome
+  nameWithType: SplashControl.delayBeforeHome
+  fullName: UnityMathQuiz.SplashControl.delayBeforeHome
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SplashControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: delayBeforeHome
+    path: ../Assets/Scripts/SplashControl.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private float delayBeforeHome
+    return:
+      type: System.Single
+    content.vb: >-
+      <SerializeField>
+
+      Private delayBeforeHome As Single
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: UnityMathQuiz.SplashControl.Start
+  commentId: M:UnityMathQuiz.SplashControl.Start
+  id: Start
+  parent: UnityMathQuiz.SplashControl
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: SplashControl.Start()
+  fullName: UnityMathQuiz.SplashControl.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SplashControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: Start
+    path: ../Assets/Scripts/SplashControl.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: UnityMathQuiz.SplashControl.Start*
+- uid: UnityMathQuiz.SplashControl.WaitingAndLoad
+  commentId: M:UnityMathQuiz.SplashControl.WaitingAndLoad
+  id: WaitingAndLoad
+  parent: UnityMathQuiz.SplashControl
+  langs:
+  - csharp
+  - vb
+  name: WaitingAndLoad()
+  nameWithType: SplashControl.WaitingAndLoad()
+  fullName: UnityMathQuiz.SplashControl.WaitingAndLoad()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SplashControl.cs
+      branch: master
+      repo: https://github.com/borastudy/FreakingMathTuts.git
+    id: WaitingAndLoad
+    path: ../Assets/Scripts/SplashControl.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: UnityMathQuiz
+  summary: This is a private function example.
+  example: []
+  syntax:
+    content: private IEnumerator WaitingAndLoad()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function WaitingAndLoad() As IEnumerator
+  overload: UnityMathQuiz.SplashControl.WaitingAndLoad*
+references:
+- uid: UnityMathQuiz
+  commentId: N:UnityMathQuiz
+  href: UnityMathQuiz.html
+  name: UnityMathQuiz
+  nameWithType: UnityMathQuiz
+  fullName: UnityMathQuiz
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityMathQuiz.SplashControl.Start*
+  commentId: Overload:UnityMathQuiz.SplashControl.Start
+  href: UnityMathQuiz.SplashControl.html#UnityMathQuiz_SplashControl_Start
+  name: Start
+  nameWithType: SplashControl.Start
+  fullName: UnityMathQuiz.SplashControl.Start
+- uid: UnityMathQuiz.SplashControl.WaitingAndLoad*
+  commentId: Overload:UnityMathQuiz.SplashControl.WaitingAndLoad
+  href: UnityMathQuiz.SplashControl.html#UnityMathQuiz_SplashControl_WaitingAndLoad
+  name: WaitingAndLoad
+  nameWithType: SplashControl.WaitingAndLoad
+  fullName: UnityMathQuiz.SplashControl.WaitingAndLoad
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

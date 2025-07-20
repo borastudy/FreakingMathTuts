@@ -1,0 +1,13 @@
+### YamlMime:TableOfContent
+items:
+- uid: UnityMathQuiz
+  name: UnityMathQuiz
+  type: Namespace
+  items:
+  - uid: UnityMathQuiz.LifeControl
+    name: LifeControl
+    type: Class
+  - uid: UnityMathQuiz.SplashControl
+    name: SplashControl
+    type: Class
+memberLayout: SamePage
